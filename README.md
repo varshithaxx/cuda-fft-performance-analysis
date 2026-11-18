@@ -1,1 +1,1 @@
-# GPU-Project
+# gpu-fft-analysis
