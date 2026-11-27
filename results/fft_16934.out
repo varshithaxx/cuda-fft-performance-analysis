@@ -1,0 +1,669 @@
+node: node003   job: 16934   step: all   started: Fri Nov 27 02:28:10 IST 2026
+NVIDIA A30, 530.30.02, 24576 MiB
+NVIDIA A30, 530.30.02, 24576 MiB
+===== GPU correctness tests =====
+# GPU: NVIDIA A30 | CC 8.0 | 56 SMs | 23.5 GB | peak BW 933 GB/s | runtime 11030 driver 12010
+  [PASS] gpu_basic      N=2         impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=3.0e-06
+  [PASS] gpu_twiddle    N=2         impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=3.0e-06
+  [PASS] gpu_shared     N=2         impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=3.0e-06
+  [PASS] gpu_shared_r4  N=2         impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=3.0e-06
+  [PASS] cufft          N=2         impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=3.0e-06
+  [PASS] gpu_basic      N=2         sine       fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=3.0e-06
+  [PASS] gpu_twiddle    N=2         sine       fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=3.0e-06
+  [PASS] gpu_shared     N=2         sine       fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=3.0e-06
+  [PASS] gpu_shared_r4  N=2         sine       fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=3.0e-06
+  [PASS] cufft          N=2         sine       fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=3.0e-06
+  [PASS] gpu_basic      N=2         multisine  fwd_err=3.42e-08 roundtrip_err=3.42e-08 tol=3.0e-06
+  [PASS] gpu_twiddle    N=2         multisine  fwd_err=3.42e-08 roundtrip_err=3.42e-08 tol=3.0e-06
+  [PASS] gpu_shared     N=2         multisine  fwd_err=3.42e-08 roundtrip_err=3.42e-08 tol=3.0e-06
+  [PASS] gpu_shared_r4  N=2         multisine  fwd_err=3.42e-08 roundtrip_err=3.42e-08 tol=3.0e-06
+  [PASS] cufft          N=2         multisine  fwd_err=3.42e-08 roundtrip_err=3.42e-08 tol=3.0e-06
+  [PASS] gpu_basic      N=2         random     fwd_err=3.56e-08 roundtrip_err=3.56e-08 tol=3.0e-06
+  [PASS] gpu_twiddle    N=2         random     fwd_err=3.56e-08 roundtrip_err=3.56e-08 tol=3.0e-06
+  [PASS] gpu_shared     N=2         random     fwd_err=3.56e-08 roundtrip_err=3.56e-08 tol=3.0e-06
+  [PASS] gpu_shared_r4  N=2         random     fwd_err=3.56e-08 roundtrip_err=3.56e-08 tol=3.0e-06
+  [PASS] cufft          N=2         random     fwd_err=3.56e-08 roundtrip_err=3.56e-08 tol=3.0e-06
+  [PASS] gpu_basic      N=4         impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=4.0e-06
+  [PASS] gpu_twiddle    N=4         impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=4.0e-06
+  [PASS] gpu_shared     N=4         impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=4.0e-06
+  [PASS] gpu_shared_r4  N=4         impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=4.0e-06
+  [PASS] cufft          N=4         impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=4.0e-06
+  [PASS] gpu_basic      N=4         sine       fwd_err=6.64e-24 roundtrip_err=7.53e-24 tol=4.0e-06
+  [PASS] gpu_twiddle    N=4         sine       fwd_err=6.64e-24 roundtrip_err=7.53e-24 tol=4.0e-06
+  [PASS] gpu_shared     N=4         sine       fwd_err=6.64e-24 roundtrip_err=7.53e-24 tol=4.0e-06
+  [PASS] gpu_shared_r4  N=4         sine       fwd_err=6.64e-24 roundtrip_err=7.53e-24 tol=4.0e-06
+  [PASS] cufft          N=4         sine       fwd_err=6.64e-24 roundtrip_err=7.53e-24 tol=4.0e-06
+  [PASS] gpu_basic      N=4         multisine  fwd_err=2.20e-08 roundtrip_err=2.20e-08 tol=4.0e-06
+  [PASS] gpu_twiddle    N=4         multisine  fwd_err=2.20e-08 roundtrip_err=2.20e-08 tol=4.0e-06
+  [PASS] gpu_shared     N=4         multisine  fwd_err=2.20e-08 roundtrip_err=2.20e-08 tol=4.0e-06
+  [PASS] gpu_shared_r4  N=4         multisine  fwd_err=2.20e-08 roundtrip_err=2.20e-08 tol=4.0e-06
+  [PASS] cufft          N=4         multisine  fwd_err=2.20e-08 roundtrip_err=2.20e-08 tol=4.0e-06
+  [PASS] gpu_basic      N=4         random     fwd_err=3.82e-08 roundtrip_err=5.00e-08 tol=4.0e-06
+  [PASS] gpu_twiddle    N=4         random     fwd_err=3.82e-08 roundtrip_err=5.00e-08 tol=4.0e-06
+  [PASS] gpu_shared     N=4         random     fwd_err=3.82e-08 roundtrip_err=5.00e-08 tol=4.0e-06
+  [PASS] gpu_shared_r4  N=4         random     fwd_err=3.82e-08 roundtrip_err=5.00e-08 tol=4.0e-06
+  [PASS] cufft          N=4         random     fwd_err=3.82e-08 roundtrip_err=5.00e-08 tol=4.0e-06
+  [PASS] gpu_basic      N=8         impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=5.0e-06
+  [PASS] gpu_twiddle    N=8         impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=5.0e-06
+  [PASS] gpu_shared     N=8         impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=5.0e-06
+  [PASS] gpu_shared_r4  N=8         impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=5.0e-06
+  [PASS] cufft          N=8         impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=5.0e-06
+  [PASS] gpu_basic      N=8         sine       fwd_err=1.62e-23 roundtrip_err=1.62e-23 tol=5.0e-06
+  [PASS] gpu_twiddle    N=8         sine       fwd_err=1.11e-23 roundtrip_err=1.41e-23 tol=5.0e-06
+  [PASS] gpu_shared     N=8         sine       fwd_err=1.11e-23 roundtrip_err=1.41e-23 tol=5.0e-06
+  [PASS] gpu_shared_r4  N=8         sine       fwd_err=1.11e-23 roundtrip_err=1.41e-23 tol=5.0e-06
+  [PASS] cufft          N=8         sine       fwd_err=1.72e-23 roundtrip_err=2.12e-23 tol=5.0e-06
+  [PASS] gpu_basic      N=8         multisine  fwd_err=3.22e-08 roundtrip_err=8.20e-08 tol=5.0e-06
+  [PASS] gpu_twiddle    N=8         multisine  fwd_err=3.22e-08 roundtrip_err=8.20e-08 tol=5.0e-06
+  [PASS] gpu_shared     N=8         multisine  fwd_err=3.22e-08 roundtrip_err=8.20e-08 tol=5.0e-06
+  [PASS] gpu_shared_r4  N=8         multisine  fwd_err=3.22e-08 roundtrip_err=8.20e-08 tol=5.0e-06
+  [PASS] cufft          N=8         multisine  fwd_err=2.99e-08 roundtrip_err=9.33e-08 tol=5.0e-06
+  [PASS] gpu_basic      N=8         random     fwd_err=8.27e-08 roundtrip_err=8.83e-08 tol=5.0e-06
+  [PASS] gpu_twiddle    N=8         random     fwd_err=6.94e-08 roundtrip_err=9.37e-08 tol=5.0e-06
+  [PASS] gpu_shared     N=8         random     fwd_err=6.94e-08 roundtrip_err=9.37e-08 tol=5.0e-06
+  [PASS] gpu_shared_r4  N=8         random     fwd_err=6.94e-08 roundtrip_err=9.37e-08 tol=5.0e-06
+  [PASS] cufft          N=8         random     fwd_err=6.42e-08 roundtrip_err=8.28e-08 tol=5.0e-06
+  [PASS] gpu_basic      N=65536     impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=1.8e-05
+  [PASS] gpu_twiddle    N=65536     impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=1.8e-05
+  [PASS] gpu_shared     N=65536     impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=1.8e-05
+  [PASS] gpu_shared_r4  N=65536     impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=1.8e-05
+  [PASS] cufft          N=65536     impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=1.8e-05
+  [PASS] gpu_basic      N=65536     sine       fwd_err=1.17e-07 roundtrip_err=1.88e-07 tol=1.8e-05
+  [PASS] gpu_twiddle    N=65536     sine       fwd_err=1.13e-07 roundtrip_err=1.47e-07 tol=1.8e-05
+  [PASS] gpu_shared     N=65536     sine       fwd_err=1.13e-07 roundtrip_err=1.47e-07 tol=1.8e-05
+  [PASS] gpu_shared_r4  N=65536     sine       fwd_err=1.13e-07 roundtrip_err=1.47e-07 tol=1.8e-05
+  [PASS] cufft          N=65536     sine       fwd_err=3.53e-07 roundtrip_err=4.03e-07 tol=1.8e-05
+  [PASS] gpu_basic      N=65536     multisine  fwd_err=1.58e-07 roundtrip_err=2.46e-07 tol=1.8e-05
+  [PASS] gpu_twiddle    N=65536     multisine  fwd_err=1.43e-07 roundtrip_err=2.06e-07 tol=1.8e-05
+  [PASS] gpu_shared     N=65536     multisine  fwd_err=1.43e-07 roundtrip_err=2.06e-07 tol=1.8e-05
+  [PASS] gpu_shared_r4  N=65536     multisine  fwd_err=1.43e-07 roundtrip_err=2.06e-07 tol=1.8e-05
+  [PASS] cufft          N=65536     multisine  fwd_err=2.95e-07 roundtrip_err=4.74e-07 tol=1.8e-05
+  [PASS] gpu_basic      N=65536     random     fwd_err=1.77e-07 roundtrip_err=2.71e-07 tol=1.8e-05
+  [PASS] gpu_twiddle    N=65536     random     fwd_err=1.50e-07 roundtrip_err=2.15e-07 tol=1.8e-05
+  [PASS] gpu_shared     N=65536     random     fwd_err=1.50e-07 roundtrip_err=2.15e-07 tol=1.8e-05
+  [PASS] gpu_shared_r4  N=65536     random     fwd_err=1.50e-07 roundtrip_err=2.15e-07 tol=1.8e-05
+  [PASS] cufft          N=65536     random     fwd_err=3.16e-07 roundtrip_err=4.48e-07 tol=1.8e-05
+  [PASS] gpu_basic      N=131072    impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=1.9e-05
+  [PASS] gpu_twiddle    N=131072    impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=1.9e-05
+  [PASS] gpu_shared     N=131072    impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=1.9e-05
+  [PASS] gpu_shared_r4  N=131072    impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=1.9e-05
+  [PASS] cufft          N=131072    impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=1.9e-05
+  [PASS] gpu_basic      N=131072    sine       fwd_err=1.62e-07 roundtrip_err=2.11e-07 tol=1.9e-05
+  [PASS] gpu_twiddle    N=131072    sine       fwd_err=1.15e-07 roundtrip_err=1.66e-07 tol=1.9e-05
+  [PASS] gpu_shared     N=131072    sine       fwd_err=1.15e-07 roundtrip_err=1.66e-07 tol=1.9e-05
+  [PASS] gpu_shared_r4  N=131072    sine       fwd_err=1.15e-07 roundtrip_err=1.66e-07 tol=1.9e-05
+  [PASS] cufft          N=131072    sine       fwd_err=3.37e-07 roundtrip_err=3.58e-07 tol=1.9e-05
+  [PASS] gpu_basic      N=131072    multisine  fwd_err=1.73e-07 roundtrip_err=2.73e-07 tol=1.9e-05
+  [PASS] gpu_twiddle    N=131072    multisine  fwd_err=1.47e-07 roundtrip_err=2.03e-07 tol=1.9e-05
+  [PASS] gpu_shared     N=131072    multisine  fwd_err=1.47e-07 roundtrip_err=2.03e-07 tol=1.9e-05
+  [PASS] gpu_shared_r4  N=131072    multisine  fwd_err=1.47e-07 roundtrip_err=2.03e-07 tol=1.9e-05
+  [PASS] cufft          N=131072    multisine  fwd_err=3.17e-07 roundtrip_err=4.50e-07 tol=1.9e-05
+  [PASS] gpu_basic      N=131072    random     fwd_err=1.83e-07 roundtrip_err=2.81e-07 tol=1.9e-05
+  [PASS] gpu_twiddle    N=131072    random     fwd_err=1.55e-07 roundtrip_err=2.21e-07 tol=1.9e-05
+  [PASS] gpu_shared     N=131072    random     fwd_err=1.55e-07 roundtrip_err=2.21e-07 tol=1.9e-05
+  [PASS] gpu_shared_r4  N=131072    random     fwd_err=1.55e-07 roundtrip_err=2.21e-07 tol=1.9e-05
+  [PASS] cufft          N=131072    random     fwd_err=3.04e-07 roundtrip_err=4.26e-07 tol=1.9e-05
+  [PASS] gpu_basic      N=262144    impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.0e-05
+  [PASS] gpu_twiddle    N=262144    impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.0e-05
+  [PASS] gpu_shared     N=262144    impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.0e-05
+  [PASS] gpu_shared_r4  N=262144    impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.0e-05
+  [PASS] cufft          N=262144    impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.0e-05
+  [PASS] gpu_basic      N=262144    sine       fwd_err=1.44e-07 roundtrip_err=1.97e-07 tol=2.0e-05
+  [PASS] gpu_twiddle    N=262144    sine       fwd_err=1.20e-07 roundtrip_err=1.56e-07 tol=2.0e-05
+  [PASS] gpu_shared     N=262144    sine       fwd_err=1.20e-07 roundtrip_err=1.56e-07 tol=2.0e-05
+  [PASS] gpu_shared_r4  N=262144    sine       fwd_err=1.20e-07 roundtrip_err=1.56e-07 tol=2.0e-05
+  [PASS] cufft          N=262144    sine       fwd_err=3.08e-07 roundtrip_err=4.45e-07 tol=2.0e-05
+  [PASS] gpu_basic      N=262144    multisine  fwd_err=1.86e-07 roundtrip_err=2.95e-07 tol=2.0e-05
+  [PASS] gpu_twiddle    N=262144    multisine  fwd_err=1.69e-07 roundtrip_err=2.41e-07 tol=2.0e-05
+  [PASS] gpu_shared     N=262144    multisine  fwd_err=1.69e-07 roundtrip_err=2.41e-07 tol=2.0e-05
+  [PASS] gpu_shared_r4  N=262144    multisine  fwd_err=1.69e-07 roundtrip_err=2.41e-07 tol=2.0e-05
+  [PASS] cufft          N=262144    multisine  fwd_err=2.96e-07 roundtrip_err=4.04e-07 tol=2.0e-05
+  [PASS] gpu_basic      N=262144    random     fwd_err=1.90e-07 roundtrip_err=2.93e-07 tol=2.0e-05
+  [PASS] gpu_twiddle    N=262144    random     fwd_err=1.60e-07 roundtrip_err=2.27e-07 tol=2.0e-05
+  [PASS] gpu_shared     N=262144    random     fwd_err=1.60e-07 roundtrip_err=2.27e-07 tol=2.0e-05
+  [PASS] gpu_shared_r4  N=262144    random     fwd_err=1.60e-07 roundtrip_err=2.27e-07 tol=2.0e-05
+  [PASS] cufft          N=262144    random     fwd_err=2.86e-07 roundtrip_err=4.00e-07 tol=2.0e-05
+  [PASS] gpu_basic      N=524288    impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.1e-05
+  [PASS] gpu_twiddle    N=524288    impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.1e-05
+  [PASS] gpu_shared     N=524288    impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.1e-05
+  [PASS] gpu_shared_r4  N=524288    impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.1e-05
+  [PASS] cufft          N=524288    impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.1e-05
+  [PASS] gpu_basic      N=524288    sine       fwd_err=1.40e-07 roundtrip_err=2.08e-07 tol=2.1e-05
+  [PASS] gpu_twiddle    N=524288    sine       fwd_err=1.31e-07 roundtrip_err=1.65e-07 tol=2.1e-05
+  [PASS] gpu_shared     N=524288    sine       fwd_err=1.31e-07 roundtrip_err=1.65e-07 tol=2.1e-05
+  [PASS] gpu_shared_r4  N=524288    sine       fwd_err=1.31e-07 roundtrip_err=1.65e-07 tol=2.1e-05
+  [PASS] cufft          N=524288    sine       fwd_err=3.91e-07 roundtrip_err=4.98e-07 tol=2.1e-05
+  [PASS] gpu_basic      N=524288    multisine  fwd_err=2.16e-07 roundtrip_err=3.28e-07 tol=2.1e-05
+  [PASS] gpu_twiddle    N=524288    multisine  fwd_err=1.46e-07 roundtrip_err=2.14e-07 tol=2.1e-05
+  [PASS] gpu_shared     N=524288    multisine  fwd_err=1.46e-07 roundtrip_err=2.14e-07 tol=2.1e-05
+  [PASS] gpu_shared_r4  N=524288    multisine  fwd_err=1.46e-07 roundtrip_err=2.14e-07 tol=2.1e-05
+  [PASS] cufft          N=524288    multisine  fwd_err=3.81e-07 roundtrip_err=6.15e-07 tol=2.1e-05
+  [PASS] gpu_basic      N=524288    random     fwd_err=1.96e-07 roundtrip_err=3.03e-07 tol=2.1e-05
+  [PASS] gpu_twiddle    N=524288    random     fwd_err=1.64e-07 roundtrip_err=2.34e-07 tol=2.1e-05
+  [PASS] gpu_shared     N=524288    random     fwd_err=1.64e-07 roundtrip_err=2.34e-07 tol=2.1e-05
+  [PASS] gpu_shared_r4  N=524288    random     fwd_err=1.64e-07 roundtrip_err=2.34e-07 tol=2.1e-05
+  [PASS] cufft          N=524288    random     fwd_err=3.75e-07 roundtrip_err=5.63e-07 tol=2.1e-05
+  [PASS] gpu_basic      N=1048576   impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.2e-05
+  [PASS] gpu_twiddle    N=1048576   impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.2e-05
+  [PASS] gpu_shared     N=1048576   impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.2e-05
+  [PASS] gpu_shared_r4  N=1048576   impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.2e-05
+  [PASS] cufft          N=1048576   impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.2e-05
+  [PASS] gpu_basic      N=1048576   sine       fwd_err=1.26e-07 roundtrip_err=2.25e-07 tol=2.2e-05
+  [PASS] gpu_twiddle    N=1048576   sine       fwd_err=1.23e-07 roundtrip_err=1.67e-07 tol=2.2e-05
+  [PASS] gpu_shared     N=1048576   sine       fwd_err=1.23e-07 roundtrip_err=1.67e-07 tol=2.2e-05
+  [PASS] gpu_shared_r4  N=1048576   sine       fwd_err=1.23e-07 roundtrip_err=1.67e-07 tol=2.2e-05
+  [PASS] cufft          N=1048576   sine       fwd_err=4.89e-07 roundtrip_err=5.80e-07 tol=2.2e-05
+  [PASS] gpu_basic      N=1048576   multisine  fwd_err=1.96e-07 roundtrip_err=3.03e-07 tol=2.2e-05
+  [PASS] gpu_twiddle    N=1048576   multisine  fwd_err=1.60e-07 roundtrip_err=2.13e-07 tol=2.2e-05
+  [PASS] gpu_shared     N=1048576   multisine  fwd_err=1.60e-07 roundtrip_err=2.13e-07 tol=2.2e-05
+  [PASS] gpu_shared_r4  N=1048576   multisine  fwd_err=1.60e-07 roundtrip_err=2.13e-07 tol=2.2e-05
+  [PASS] cufft          N=1048576   multisine  fwd_err=4.70e-07 roundtrip_err=8.68e-07 tol=2.2e-05
+  [PASS] gpu_basic      N=1048576   random     fwd_err=2.02e-07 roundtrip_err=3.14e-07 tol=2.2e-05
+  [PASS] gpu_twiddle    N=1048576   random     fwd_err=1.69e-07 roundtrip_err=2.40e-07 tol=2.2e-05
+  [PASS] gpu_shared     N=1048576   random     fwd_err=1.69e-07 roundtrip_err=2.40e-07 tol=2.2e-05
+  [PASS] gpu_shared_r4  N=1048576   random     fwd_err=1.69e-07 roundtrip_err=2.40e-07 tol=2.2e-05
+  [PASS] cufft          N=1048576   random     fwd_err=4.60e-07 roundtrip_err=7.11e-07 tol=2.2e-05
+  [PASS] gpu_basic      N=2097152   impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.3e-05
+  [PASS] gpu_twiddle    N=2097152   impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.3e-05
+  [PASS] gpu_shared     N=2097152   impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.3e-05
+  [PASS] gpu_shared_r4  N=2097152   impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.3e-05
+  [PASS] cufft          N=2097152   impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.3e-05
+  [PASS] gpu_basic      N=2097152   sine       fwd_err=1.30e-07 roundtrip_err=2.31e-07 tol=2.3e-05
+  [PASS] gpu_twiddle    N=2097152   sine       fwd_err=1.29e-07 roundtrip_err=1.71e-07 tol=2.3e-05
+  [PASS] gpu_shared     N=2097152   sine       fwd_err=1.29e-07 roundtrip_err=1.71e-07 tol=2.3e-05
+  [PASS] gpu_shared_r4  N=2097152   sine       fwd_err=1.29e-07 roundtrip_err=1.71e-07 tol=2.3e-05
+  [PASS] cufft          N=2097152   sine       fwd_err=5.01e-07 roundtrip_err=5.97e-07 tol=2.3e-05
+  [PASS] gpu_basic      N=2097152   multisine  fwd_err=2.00e-07 roundtrip_err=3.14e-07 tol=2.3e-05
+  [PASS] gpu_twiddle    N=2097152   multisine  fwd_err=1.73e-07 roundtrip_err=2.33e-07 tol=2.3e-05
+  [PASS] gpu_shared     N=2097152   multisine  fwd_err=1.73e-07 roundtrip_err=2.33e-07 tol=2.3e-05
+  [PASS] gpu_shared_r4  N=2097152   multisine  fwd_err=1.73e-07 roundtrip_err=2.33e-07 tol=2.3e-05
+  [PASS] cufft          N=2097152   multisine  fwd_err=4.38e-07 roundtrip_err=7.71e-07 tol=2.3e-05
+  [PASS] gpu_basic      N=2097152   random     fwd_err=2.08e-07 roundtrip_err=3.25e-07 tol=2.3e-05
+  [PASS] gpu_twiddle    N=2097152   random     fwd_err=1.73e-07 roundtrip_err=2.46e-07 tol=2.3e-05
+  [PASS] gpu_shared     N=2097152   random     fwd_err=1.73e-07 roundtrip_err=2.46e-07 tol=2.3e-05
+  [PASS] gpu_shared_r4  N=2097152   random     fwd_err=1.73e-07 roundtrip_err=2.46e-07 tol=2.3e-05
+  [PASS] cufft          N=2097152   random     fwd_err=4.36e-07 roundtrip_err=6.66e-07 tol=2.3e-05
+  [PASS] gpu_basic      N=4194304   impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.4e-05
+  [PASS] gpu_twiddle    N=4194304   impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.4e-05
+  [PASS] gpu_shared     N=4194304   impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.4e-05
+  [PASS] gpu_shared_r4  N=4194304   impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.4e-05
+  [PASS] cufft          N=4194304   impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.4e-05
+  [PASS] gpu_basic      N=4194304   sine       fwd_err=1.34e-07 roundtrip_err=2.30e-07 tol=2.4e-05
+  [PASS] gpu_twiddle    N=4194304   sine       fwd_err=1.51e-07 roundtrip_err=1.98e-07 tol=2.4e-05
+  [PASS] gpu_shared     N=4194304   sine       fwd_err=1.51e-07 roundtrip_err=1.98e-07 tol=2.4e-05
+  [PASS] gpu_shared_r4  N=4194304   sine       fwd_err=1.51e-07 roundtrip_err=1.98e-07 tol=2.4e-05
+  [PASS] cufft          N=4194304   sine       fwd_err=4.82e-07 roundtrip_err=5.79e-07 tol=2.4e-05
+  [PASS] gpu_basic      N=4194304   multisine  fwd_err=2.10e-07 roundtrip_err=3.22e-07 tol=2.4e-05
+  [PASS] gpu_twiddle    N=4194304   multisine  fwd_err=1.70e-07 roundtrip_err=2.48e-07 tol=2.4e-05
+  [PASS] gpu_shared     N=4194304   multisine  fwd_err=1.70e-07 roundtrip_err=2.48e-07 tol=2.4e-05
+  [PASS] gpu_shared_r4  N=4194304   multisine  fwd_err=1.70e-07 roundtrip_err=2.48e-07 tol=2.4e-05
+  [PASS] cufft          N=4194304   multisine  fwd_err=4.24e-07 roundtrip_err=6.46e-07 tol=2.4e-05
+  [PASS] gpu_basic      N=4194304   random     fwd_err=2.14e-07 roundtrip_err=3.35e-07 tol=2.4e-05
+  [PASS] gpu_twiddle    N=4194304   random     fwd_err=1.77e-07 roundtrip_err=2.52e-07 tol=2.4e-05
+  [PASS] gpu_shared     N=4194304   random     fwd_err=1.77e-07 roundtrip_err=2.52e-07 tol=2.4e-05
+  [PASS] gpu_shared_r4  N=4194304   random     fwd_err=1.77e-07 roundtrip_err=2.52e-07 tol=2.4e-05
+  [PASS] cufft          N=4194304   random     fwd_err=4.11e-07 roundtrip_err=6.14e-07 tol=2.4e-05
+== Configuration variants (N = 2^20, random signal) ==
+  [PASS] shared_r4 threads=32   logB=6  sharedThreads=64   err=1.69e-07
+  [PASS] shared_r4 threads=32   logB=6  sharedThreads=256  err=1.69e-07
+  [PASS] shared_r4 threads=32   logB=6  sharedThreads=1024 err=1.69e-07
+  [PASS] shared_r4 threads=32   logB=9  sharedThreads=64   err=1.69e-07
+  [PASS] shared_r4 threads=32   logB=9  sharedThreads=256  err=1.69e-07
+  [PASS] shared_r4 threads=32   logB=9  sharedThreads=1024 err=1.69e-07
+  [PASS] shared_r4 threads=32   logB=12 sharedThreads=64   err=1.69e-07
+  [PASS] shared_r4 threads=32   logB=12 sharedThreads=256  err=1.69e-07
+  [PASS] shared_r4 threads=32   logB=12 sharedThreads=1024 err=1.69e-07
+  [PASS] shared_r4 threads=128  logB=6  sharedThreads=64   err=1.69e-07
+  [PASS] shared_r4 threads=128  logB=6  sharedThreads=256  err=1.69e-07
+  [PASS] shared_r4 threads=128  logB=6  sharedThreads=1024 err=1.69e-07
+  [PASS] shared_r4 threads=128  logB=9  sharedThreads=64   err=1.69e-07
+  [PASS] shared_r4 threads=128  logB=9  sharedThreads=256  err=1.69e-07
+  [PASS] shared_r4 threads=128  logB=9  sharedThreads=1024 err=1.69e-07
+  [PASS] shared_r4 threads=128  logB=12 sharedThreads=64   err=1.69e-07
+  [PASS] shared_r4 threads=128  logB=12 sharedThreads=256  err=1.69e-07
+  [PASS] shared_r4 threads=128  logB=12 sharedThreads=1024 err=1.69e-07
+  [PASS] shared_r4 threads=1024 logB=6  sharedThreads=64   err=1.69e-07
+  [PASS] shared_r4 threads=1024 logB=6  sharedThreads=256  err=1.69e-07
+  [PASS] shared_r4 threads=1024 logB=6  sharedThreads=1024 err=1.69e-07
+  [PASS] shared_r4 threads=1024 logB=9  sharedThreads=64   err=1.69e-07
+  [PASS] shared_r4 threads=1024 logB=9  sharedThreads=256  err=1.69e-07
+  [PASS] shared_r4 threads=1024 logB=9  sharedThreads=1024 err=1.69e-07
+  [PASS] shared_r4 threads=1024 logB=12 sharedThreads=64   err=1.69e-07
+  [PASS] shared_r4 threads=1024 logB=12 sharedThreads=256  err=1.69e-07
+  [PASS] shared_r4 threads=1024 logB=12 sharedThreads=1024 err=1.69e-07
+
+467 checks, ALL GPU TESTS PASSED: 0 failure(s)
+===== benchmark =====
+# GPU: NVIDIA A30 | CC 8.0 | 56 SMs | 23.5 GB | peak BW 933 GB/s | runtime 11030 driver 12010
+# CPU: Intel(R) Xeon(R) Gold 6326 CPU @ 2.90GHz
+# config: threads=256 logB=11 sharedThreads=512 reps=9 signal=random
+== N = 2^10 = 1024 ==
+  cpu_dft            N=2^10 kernel=    1.6645 ms  e2e=    1.6645 ms  err=1.15e-15
+  cpu_fft            N=2^10 kernel=    0.0085 ms  e2e=    0.0085 ms  err=1.25e-07
+  transfer_pinned    N=2^10 kernel=       nan ms  e2e=    0.0370 ms  err=nan
+  transfer_pageable  N=2^10 kernel=       nan ms  e2e=    0.0324 ms  err=nan
+  gpu_basic          N=2^10 kernel=    0.0512 ms  e2e=    0.0747 ms  err=1.39e-07
+  gpu_twiddle        N=2^10 kernel=    0.0473 ms  e2e=    0.0673 ms  err=1.14e-07
+  gpu_shared         N=2^10 kernel=    0.0111 ms  e2e=    0.0417 ms  err=1.14e-07
+  gpu_shared_r4      N=2^10 kernel=    0.0111 ms  e2e=    0.0419 ms  err=1.14e-07
+  cufft              N=2^10 kernel=    0.0054 ms  e2e=    0.0331 ms  err=2.78e-07
+== N = 2^11 = 2048 ==
+  cpu_dft            N=2^11 kernel=    6.6011 ms  e2e=    6.6011 ms  err=1.58e-15
+  cpu_fft            N=2^11 kernel=    0.0175 ms  e2e=    0.0175 ms  err=1.31e-07
+  transfer_pinned    N=2^11 kernel=       nan ms  e2e=    0.0361 ms  err=nan
+  transfer_pageable  N=2^11 kernel=       nan ms  e2e=    0.0323 ms  err=nan
+  gpu_basic          N=2^11 kernel=    0.0488 ms  e2e=    0.0690 ms  err=1.46e-07
+  gpu_twiddle        N=2^11 kernel=    0.0459 ms  e2e=    0.0688 ms  err=1.25e-07
+  gpu_shared         N=2^11 kernel=    0.0165 ms  e2e=    0.0414 ms  err=1.25e-07
+  gpu_shared_r4      N=2^11 kernel=    0.0166 ms  e2e=    0.0414 ms  err=1.25e-07
+  cufft              N=2^11 kernel=    0.0072 ms  e2e=    0.0341 ms  err=2.65e-07
+== N = 2^12 = 4096 ==
+  cpu_dft            N=2^12 kernel=   27.5817 ms  e2e=   27.5817 ms  err=2.17e-15
+  cpu_fft            N=2^12 kernel=    0.0367 ms  e2e=    0.0367 ms  err=1.36e-07
+  transfer_pinned    N=2^12 kernel=       nan ms  e2e=    0.0378 ms  err=nan
+  transfer_pageable  N=2^12 kernel=       nan ms  e2e=    0.0300 ms  err=nan
+  gpu_basic          N=2^12 kernel=    0.0386 ms  e2e=    0.0539 ms  err=1.54e-07
+  gpu_twiddle        N=2^12 kernel=    0.0364 ms  e2e=    0.0460 ms  err=1.29e-07
+  gpu_shared         N=2^12 kernel=    0.0157 ms  e2e=    0.0354 ms  err=1.29e-07
+  gpu_shared_r4      N=2^12 kernel=    0.0156 ms  e2e=    0.0363 ms  err=1.29e-07
+  cufft              N=2^12 kernel=    0.0059 ms  e2e=    0.0332 ms  err=2.82e-07
+== N = 2^13 = 8192 ==
+  cpu_dft            N=2^13 kernel=  111.0349 ms  e2e=  111.0349 ms  err=3.09e-15
+  cpu_fft            N=2^13 kernel=    0.0800 ms  e2e=    0.0800 ms  err=1.41e-07
+  transfer_pinned    N=2^13 kernel=       nan ms  e2e=    0.0373 ms  err=nan
+  transfer_pageable  N=2^13 kernel=       nan ms  e2e=    0.0379 ms  err=nan
+  gpu_basic          N=2^13 kernel=    0.0421 ms  e2e=    0.0568 ms  err=1.57e-07
+  gpu_twiddle        N=2^13 kernel=    0.0402 ms  e2e=    0.0569 ms  err=1.36e-07
+  gpu_shared         N=2^13 kernel=    0.0192 ms  e2e=    0.0384 ms  err=1.36e-07
+  gpu_shared_r4      N=2^13 kernel=    0.0166 ms  e2e=    0.0373 ms  err=1.36e-07
+  cufft              N=2^13 kernel=    0.0096 ms  e2e=    0.0348 ms  err=4.46e-07
+== N = 2^14 = 16384 ==
+  cpu_dft            N=2^14 kernel=  439.0477 ms  e2e=  439.0477 ms  err=4.31e-15
+  cpu_fft            N=2^14 kernel=    0.1977 ms  e2e=    0.1977 ms  err=1.48e-07
+  transfer_pinned    N=2^14 kernel=       nan ms  e2e=    0.0419 ms  err=nan
+  transfer_pageable  N=2^14 kernel=       nan ms  e2e=    0.0509 ms  err=nan
+  gpu_basic          N=2^14 kernel=    0.0460 ms  e2e=    0.0768 ms  err=1.65e-07
+  gpu_twiddle        N=2^14 kernel=    0.0446 ms  e2e=    0.0688 ms  err=1.41e-07
+  gpu_shared         N=2^14 kernel=    0.0227 ms  e2e=    0.0520 ms  err=1.41e-07
+  gpu_shared_r4      N=2^14 kernel=    0.0201 ms  e2e=    0.0497 ms  err=1.41e-07
+  cufft              N=2^14 kernel=    0.0198 ms  e2e=    0.0531 ms  err=3.46e-07
+== N = 2^15 = 32768 ==
+  cpu_fft            N=2^15 kernel=    0.4228 ms  e2e=    0.4228 ms  err=1.53e-07
+  transfer_pinned    N=2^15 kernel=       nan ms  e2e=    0.0488 ms  err=nan
+  transfer_pageable  N=2^15 kernel=       nan ms  e2e=    0.0840 ms  err=nan
+  gpu_basic          N=2^15 kernel=    0.0525 ms  e2e=    0.0842 ms  err=1.71e-07
+  gpu_twiddle        N=2^15 kernel=    0.0535 ms  e2e=    0.0843 ms  err=1.45e-07
+  gpu_shared         N=2^15 kernel=    0.0272 ms  e2e=    0.0616 ms  err=1.45e-07
+  gpu_shared_r4      N=2^15 kernel=    0.0210 ms  e2e=    0.0611 ms  err=1.45e-07
+  cufft              N=2^15 kernel=    0.0358 ms  e2e=    0.0827 ms  err=4.91e-07
+== N = 2^16 = 65536 ==
+  cpu_fft            N=2^16 kernel=    0.8889 ms  e2e=    0.8889 ms  err=1.58e-07
+  transfer_pinned    N=2^16 kernel=       nan ms  e2e=    0.0738 ms  err=nan
+  transfer_pageable  N=2^16 kernel=       nan ms  e2e=    0.1508 ms  err=nan
+  gpu_basic          N=2^16 kernel=    0.0644 ms  e2e=    0.1201 ms  err=1.77e-07
+  gpu_twiddle        N=2^16 kernel=    0.0670 ms  e2e=    0.1203 ms  err=1.50e-07
+  gpu_shared         N=2^16 kernel=    0.0345 ms  e2e=    0.0828 ms  err=1.50e-07
+  gpu_shared_r4      N=2^16 kernel=    0.0268 ms  e2e=    0.0898 ms  err=1.50e-07
+  cufft              N=2^16 kernel=    0.0099 ms  e2e=    0.0667 ms  err=3.16e-07
+== N = 2^17 = 131072 ==
+  cpu_fft            N=2^17 kernel=    1.9079 ms  e2e=    1.9079 ms  err=1.64e-07
+  transfer_pinned    N=2^17 kernel=       nan ms  e2e=    0.1072 ms  err=nan
+  transfer_pageable  N=2^17 kernel=       nan ms  e2e=    0.2870 ms  err=nan
+  gpu_basic          N=2^17 kernel=    0.0840 ms  e2e=    0.1811 ms  err=1.83e-07
+  gpu_twiddle        N=2^17 kernel=    0.0878 ms  e2e=    0.1827 ms  err=1.55e-07
+  gpu_shared         N=2^17 kernel=    0.0541 ms  e2e=    0.1487 ms  err=1.55e-07
+  gpu_shared_r4      N=2^17 kernel=    0.0411 ms  e2e=    0.1398 ms  err=1.55e-07
+  cufft              N=2^17 kernel=    0.0139 ms  e2e=    0.1142 ms  err=3.04e-07
+== N = 2^18 = 262144 ==
+  cpu_fft            N=2^18 kernel=    4.9547 ms  e2e=    4.9547 ms  err=1.69e-07
+  transfer_pinned    N=2^18 kernel=       nan ms  e2e=    0.1910 ms  err=nan
+  transfer_pageable  N=2^18 kernel=       nan ms  e2e=    0.4798 ms  err=nan
+  gpu_basic          N=2^18 kernel=    0.1192 ms  e2e=    0.3034 ms  err=1.90e-07
+  gpu_twiddle        N=2^18 kernel=    0.1320 ms  e2e=    0.3063 ms  err=1.60e-07
+  gpu_shared         N=2^18 kernel=    0.0830 ms  e2e=    0.2556 ms  err=1.60e-07
+  gpu_shared_r4      N=2^18 kernel=    0.0636 ms  e2e=    0.2493 ms  err=1.60e-07
+  cufft              N=2^18 kernel=    0.0222 ms  e2e=    0.2076 ms  err=2.86e-07
+== N = 2^19 = 524288 ==
+  cpu_fft            N=2^19 kernel=   17.3901 ms  e2e=   17.3901 ms  err=1.73e-07
+  transfer_pinned    N=2^19 kernel=       nan ms  e2e=    0.3557 ms  err=nan
+  transfer_pageable  N=2^19 kernel=       nan ms  e2e=    0.8743 ms  err=nan
+  gpu_basic          N=2^19 kernel=    0.1915 ms  e2e=    0.5357 ms  err=1.96e-07
+  gpu_twiddle        N=2^19 kernel=    0.2193 ms  e2e=    0.5610 ms  err=1.64e-07
+  gpu_shared         N=2^19 kernel=    0.1454 ms  e2e=    0.4868 ms  err=1.64e-07
+  gpu_shared_r4      N=2^19 kernel=    0.1053 ms  e2e=    0.4537 ms  err=1.64e-07
+  cufft              N=2^19 kernel=    0.0342 ms  e2e=    0.3795 ms  err=3.75e-07
+== N = 2^20 = 1048576 ==
+  cpu_fft            N=2^20 kernel=   38.9017 ms  e2e=   38.9017 ms  err=1.78e-07
+  transfer_pinned    N=2^20 kernel=       nan ms  e2e=    0.6849 ms  err=nan
+  transfer_pageable  N=2^20 kernel=       nan ms  e2e=    1.6452 ms  err=nan
+  gpu_basic          N=2^20 kernel=    0.3283 ms  e2e=    1.0012 ms  err=2.02e-07
+  gpu_twiddle        N=2^20 kernel=    0.3967 ms  e2e=    1.0822 ms  err=1.69e-07
+  gpu_shared         N=2^20 kernel=    0.2896 ms  e2e=    0.9576 ms  err=1.69e-07
+  gpu_shared_r4      N=2^20 kernel=    0.2144 ms  e2e=    0.8797 ms  err=1.69e-07
+  cufft              N=2^20 kernel=    0.0651 ms  e2e=    0.7350 ms  err=4.60e-07
+== N = 2^21 = 2097152 ==
+  cpu_fft            N=2^21 kernel=   85.4082 ms  e2e=   85.4082 ms  err=1.82e-07
+  transfer_pinned    N=2^21 kernel=       nan ms  e2e=    1.3427 ms  err=nan
+  transfer_pageable  N=2^21 kernel=       nan ms  e2e=    3.1868 ms  err=nan
+  gpu_basic          N=2^21 kernel=    0.8485 ms  e2e=    2.2488 ms  err=2.08e-07
+  gpu_twiddle        N=2^21 kernel=    1.0564 ms  e2e=    2.4596 ms  err=1.73e-07
+  gpu_shared         N=2^21 kernel=    0.7535 ms  e2e=    2.0766 ms  err=1.73e-07
+  gpu_shared_r4      N=2^21 kernel=    0.5038 ms  e2e=    1.8300 ms  err=1.73e-07
+  cufft              N=2^21 kernel=    0.1114 ms  e2e=    1.4440 ms  err=4.36e-07
+== N = 2^22 = 4194304 ==
+  cpu_fft            N=2^22 kernel=  213.8166 ms  e2e=  213.8166 ms  err=1.87e-07
+  transfer_pinned    N=2^22 kernel=       nan ms  e2e=    2.6635 ms  err=nan
+  transfer_pageable  N=2^22 kernel=       nan ms  e2e=    6.2579 ms  err=nan
+  gpu_basic          N=2^22 kernel=    2.8793 ms  e2e=    5.5500 ms  err=2.14e-07
+  gpu_twiddle        N=2^22 kernel=    3.2993 ms  e2e=    5.9695 ms  err=1.77e-07
+  gpu_shared         N=2^22 kernel=    1.9612 ms  e2e=    4.6093 ms  err=1.77e-07
+  gpu_shared_r4      N=2^22 kernel=    1.2925 ms  e2e=    3.9461 ms  err=1.77e-07
+  cufft              N=2^22 kernel=    0.2165 ms  e2e=    2.8772 ms  err=4.11e-07
+== N = 2^23 = 8388608 ==
+  cpu_fft            N=2^23 kernel=  637.2457 ms  e2e=  637.2457 ms  err=1.91e-07
+  transfer_pinned    N=2^23 kernel=       nan ms  e2e=    6.3475 ms  err=nan
+  transfer_pageable  N=2^23 kernel=       nan ms  e2e=   12.5860 ms  err=nan
+  gpu_basic          N=2^23 kernel=    6.1399 ms  e2e=   11.3212 ms  err=2.20e-07
+  gpu_twiddle        N=2^23 kernel=    7.1926 ms  e2e=   12.5079 ms  err=1.81e-07
+  gpu_shared         N=2^23 kernel=    4.4581 ms  e2e=    9.7596 ms  err=1.81e-07
+  gpu_shared_r4      N=2^23 kernel=    2.8140 ms  e2e=    8.1136 ms  err=1.81e-07
+  cufft              N=2^23 kernel=    0.4882 ms  e2e=    5.7919 ms  err=4.19e-07
+== N = 2^24 = 16777216 ==
+  cpu_fft            N=2^24 kernel= 1527.7157 ms  e2e= 1527.7157 ms  err=1.95e-07
+  transfer_pinned    N=2^24 kernel=       nan ms  e2e=   11.3230 ms  err=nan
+  transfer_pageable  N=2^24 kernel=       nan ms  e2e=   25.0835 ms  err=nan
+  gpu_basic          N=2^24 kernel=   12.4256 ms  e2e=   23.0551 ms  err=2.26e-07
+  gpu_twiddle        N=2^24 kernel=   15.4714 ms  e2e=   26.0517 ms  err=1.85e-07
+  gpu_shared         N=2^24 kernel=    9.8689 ms  e2e=   20.4620 ms  err=1.85e-07
+  gpu_shared_r4      N=2^24 kernel=    6.3367 ms  e2e=   16.9227 ms  err=1.85e-07
+  cufft              N=2^24 kernel=    1.0209 ms  e2e=   11.6085 ms  err=4.27e-07
+wrote results/bench.csv
+===== configuration sweep =====
+# GPU: NVIDIA A30 | CC 8.0 | 56 SMs | 23.5 GB | peak BW 933 GB/s | runtime 11030 driver 12010
+== sweep N = 2^16 ==
+  threads  gpu_basic      N=2^16 threads=32   logB=11 sharedThreads=512     0.1116 ms    47.0 GFLOP/s
+  threads  gpu_basic      N=2^16 threads=64   logB=11 sharedThreads=512     0.1055 ms    49.7 GFLOP/s
+  threads  gpu_basic      N=2^16 threads=128  logB=11 sharedThreads=512     0.1003 ms    52.3 GFLOP/s
+  threads  gpu_basic      N=2^16 threads=256  logB=11 sharedThreads=512     0.0998 ms    52.5 GFLOP/s
+  threads  gpu_basic      N=2^16 threads=512  logB=11 sharedThreads=512     0.1027 ms    51.1 GFLOP/s
+  threads  gpu_basic      N=2^16 threads=1024 logB=11 sharedThreads=512     0.1018 ms    51.5 GFLOP/s
+  threads  gpu_twiddle    N=2^16 threads=32   logB=11 sharedThreads=512     0.0897 ms    58.4 GFLOP/s
+  threads  gpu_twiddle    N=2^16 threads=64   logB=11 sharedThreads=512     0.0834 ms    62.9 GFLOP/s
+  threads  gpu_twiddle    N=2^16 threads=128  logB=11 sharedThreads=512     0.0806 ms    65.1 GFLOP/s
+  threads  gpu_twiddle    N=2^16 threads=256  logB=11 sharedThreads=512     0.0826 ms    63.4 GFLOP/s
+  threads  gpu_twiddle    N=2^16 threads=512  logB=11 sharedThreads=512     0.0818 ms    64.1 GFLOP/s
+  threads  gpu_twiddle    N=2^16 threads=1024 logB=11 sharedThreads=512     0.0837 ms    62.6 GFLOP/s
+  threads  gpu_shared_r4  N=2^16 threads=32   logB=11 sharedThreads=512     0.0333 ms   157.3 GFLOP/s
+  threads  gpu_shared_r4  N=2^16 threads=64   logB=11 sharedThreads=512     0.0322 ms   163.1 GFLOP/s
+  threads  gpu_shared_r4  N=2^16 threads=128  logB=11 sharedThreads=512     0.0323 ms   162.5 GFLOP/s
+  threads  gpu_shared_r4  N=2^16 threads=256  logB=11 sharedThreads=512     0.0327 ms   160.3 GFLOP/s
+  threads  gpu_shared_r4  N=2^16 threads=512  logB=11 sharedThreads=512     0.0318 ms   164.9 GFLOP/s
+  threads  gpu_shared_r4  N=2^16 threads=1024 logB=11 sharedThreads=512     0.0339 ms   154.4 GFLOP/s
+  tile     gpu_shared     N=2^16 threads=256  logB=6  sharedThreads=32      0.0581 ms    90.3 GFLOP/s
+  tile     gpu_shared     N=2^16 threads=256  logB=7  sharedThreads=32      0.0534 ms    98.2 GFLOP/s
+  tile     gpu_shared     N=2^16 threads=256  logB=7  sharedThreads=64      0.0531 ms    98.7 GFLOP/s
+  tile     gpu_shared     N=2^16 threads=256  logB=8  sharedThreads=32      0.0514 ms   102.0 GFLOP/s
+  tile     gpu_shared     N=2^16 threads=256  logB=8  sharedThreads=64      0.0496 ms   105.8 GFLOP/s
+  tile     gpu_shared     N=2^16 threads=256  logB=8  sharedThreads=128     0.0492 ms   106.7 GFLOP/s
+  tile     gpu_shared     N=2^16 threads=256  logB=9  sharedThreads=32      0.0454 ms   115.6 GFLOP/s
+  tile     gpu_shared     N=2^16 threads=256  logB=9  sharedThreads=64      0.0399 ms   131.5 GFLOP/s
+  tile     gpu_shared     N=2^16 threads=256  logB=9  sharedThreads=128     0.0383 ms   136.7 GFLOP/s
+  tile     gpu_shared     N=2^16 threads=256  logB=9  sharedThreads=256     0.0381 ms   137.4 GFLOP/s
+  tile     gpu_shared     N=2^16 threads=256  logB=10 sharedThreads=32      0.0567 ms    92.4 GFLOP/s
+  tile     gpu_shared     N=2^16 threads=256  logB=10 sharedThreads=64      0.0426 ms   123.1 GFLOP/s
+  tile     gpu_shared     N=2^16 threads=256  logB=10 sharedThreads=128     0.0382 ms   137.3 GFLOP/s
+  tile     gpu_shared     N=2^16 threads=256  logB=10 sharedThreads=256     0.0372 ms   141.0 GFLOP/s
+  tile     gpu_shared     N=2^16 threads=256  logB=10 sharedThreads=512     0.0372 ms   141.0 GFLOP/s
+  tile     gpu_shared     N=2^16 threads=256  logB=11 sharedThreads=32      0.0876 ms    59.9 GFLOP/s
+  tile     gpu_shared     N=2^16 threads=256  logB=11 sharedThreads=64      0.0558 ms    94.0 GFLOP/s
+  tile     gpu_shared     N=2^16 threads=256  logB=11 sharedThreads=128     0.0406 ms   129.1 GFLOP/s
+  tile     gpu_shared     N=2^16 threads=256  logB=11 sharedThreads=256     0.0353 ms   148.6 GFLOP/s
+  tile     gpu_shared     N=2^16 threads=256  logB=11 sharedThreads=512     0.0343 ms   153.1 GFLOP/s
+  tile     gpu_shared     N=2^16 threads=256  logB=11 sharedThreads=1024    0.0344 ms   152.6 GFLOP/s
+  tile     gpu_shared     N=2^16 threads=256  logB=12 sharedThreads=32      0.1538 ms    34.1 GFLOP/s
+  tile     gpu_shared     N=2^16 threads=256  logB=12 sharedThreads=64      0.0873 ms    60.0 GFLOP/s
+  tile     gpu_shared     N=2^16 threads=256  logB=12 sharedThreads=128     0.0551 ms    95.1 GFLOP/s
+  tile     gpu_shared     N=2^16 threads=256  logB=12 sharedThreads=256     0.0442 ms   118.5 GFLOP/s
+  tile     gpu_shared     N=2^16 threads=256  logB=12 sharedThreads=512     0.0423 ms   123.8 GFLOP/s
+  tile     gpu_shared     N=2^16 threads=256  logB=12 sharedThreads=1024    0.0424 ms   123.5 GFLOP/s
+  tile     gpu_shared_r4  N=2^16 threads=256  logB=6  sharedThreads=32      0.0283 ms   185.5 GFLOP/s
+  tile     gpu_shared_r4  N=2^16 threads=256  logB=7  sharedThreads=32      0.0285 ms   183.8 GFLOP/s
+  tile     gpu_shared_r4  N=2^16 threads=256  logB=7  sharedThreads=64      0.0284 ms   184.8 GFLOP/s
+  tile     gpu_shared_r4  N=2^16 threads=256  logB=8  sharedThreads=32      0.0265 ms   197.7 GFLOP/s
+  tile     gpu_shared_r4  N=2^16 threads=256  logB=8  sharedThreads=64      0.0251 ms   209.0 GFLOP/s
+  tile     gpu_shared_r4  N=2^16 threads=256  logB=8  sharedThreads=128     0.0247 ms   212.0 GFLOP/s
+  tile     gpu_shared_r4  N=2^16 threads=256  logB=9  sharedThreads=32      0.0336 ms   156.1 GFLOP/s
+  tile     gpu_shared_r4  N=2^16 threads=256  logB=9  sharedThreads=64      0.0280 ms   187.2 GFLOP/s
+  tile     gpu_shared_r4  N=2^16 threads=256  logB=9  sharedThreads=128     0.0266 ms   196.9 GFLOP/s
+  tile     gpu_shared_r4  N=2^16 threads=256  logB=9  sharedThreads=256     0.0264 ms   198.8 GFLOP/s
+  tile     gpu_shared_r4  N=2^16 threads=256  logB=10 sharedThreads=32      0.0451 ms   116.2 GFLOP/s
+  tile     gpu_shared_r4  N=2^16 threads=256  logB=10 sharedThreads=64      0.0310 ms   169.0 GFLOP/s
+  tile     gpu_shared_r4  N=2^16 threads=256  logB=10 sharedThreads=128     0.0266 ms   197.3 GFLOP/s
+  tile     gpu_shared_r4  N=2^16 threads=256  logB=10 sharedThreads=256     0.0255 ms   205.2 GFLOP/s
+  tile     gpu_shared_r4  N=2^16 threads=256  logB=10 sharedThreads=512     0.0256 ms   204.8 GFLOP/s
+  tile     gpu_shared_r4  N=2^16 threads=256  logB=11 sharedThreads=32      0.0803 ms    65.3 GFLOP/s
+  tile     gpu_shared_r4  N=2^16 threads=256  logB=11 sharedThreads=64      0.0485 ms   108.0 GFLOP/s
+  tile     gpu_shared_r4  N=2^16 threads=256  logB=11 sharedThreads=128     0.0334 ms   156.8 GFLOP/s
+  tile     gpu_shared_r4  N=2^16 threads=256  logB=11 sharedThreads=256     0.0281 ms   186.9 GFLOP/s
+  tile     gpu_shared_r4  N=2^16 threads=256  logB=11 sharedThreads=512     0.0270 ms   193.9 GFLOP/s
+  tile     gpu_shared_r4  N=2^16 threads=256  logB=11 sharedThreads=1024    0.0270 ms   193.9 GFLOP/s
+  tile     gpu_shared_r4  N=2^16 threads=256  logB=12 sharedThreads=32      0.1461 ms    35.9 GFLOP/s
+  tile     gpu_shared_r4  N=2^16 threads=256  logB=12 sharedThreads=64      0.0797 ms    65.8 GFLOP/s
+  tile     gpu_shared_r4  N=2^16 threads=256  logB=12 sharedThreads=128     0.0475 ms   110.5 GFLOP/s
+  tile     gpu_shared_r4  N=2^16 threads=256  logB=12 sharedThreads=256     0.0365 ms   143.6 GFLOP/s
+  tile     gpu_shared_r4  N=2^16 threads=256  logB=12 sharedThreads=512     0.0347 ms   151.0 GFLOP/s
+  tile     gpu_shared_r4  N=2^16 threads=256  logB=12 sharedThreads=1024    0.0348 ms   150.6 GFLOP/s
+== sweep N = 2^20 ==
+  threads  gpu_basic      N=2^20 threads=32   logB=11 sharedThreads=512     0.4729 ms   221.7 GFLOP/s
+  threads  gpu_basic      N=2^20 threads=64   logB=11 sharedThreads=512     0.3281 ms   319.6 GFLOP/s
+  threads  gpu_basic      N=2^20 threads=128  logB=11 sharedThreads=512     0.3299 ms   317.8 GFLOP/s
+  threads  gpu_basic      N=2^20 threads=256  logB=11 sharedThreads=512     0.3289 ms   318.8 GFLOP/s
+  threads  gpu_basic      N=2^20 threads=512  logB=11 sharedThreads=512     0.3260 ms   321.6 GFLOP/s
+  threads  gpu_basic      N=2^20 threads=1024 logB=11 sharedThreads=512     0.3338 ms   314.1 GFLOP/s
+  threads  gpu_twiddle    N=2^20 threads=32   logB=11 sharedThreads=512     0.4962 ms   211.3 GFLOP/s
+  threads  gpu_twiddle    N=2^20 threads=64   logB=11 sharedThreads=512     0.3975 ms   263.8 GFLOP/s
+  threads  gpu_twiddle    N=2^20 threads=128  logB=11 sharedThreads=512     0.3959 ms   264.9 GFLOP/s
+  threads  gpu_twiddle    N=2^20 threads=256  logB=11 sharedThreads=512     0.3971 ms   264.1 GFLOP/s
+  threads  gpu_twiddle    N=2^20 threads=512  logB=11 sharedThreads=512     0.3946 ms   265.7 GFLOP/s
+  threads  gpu_twiddle    N=2^20 threads=1024 logB=11 sharedThreads=512     0.4020 ms   260.8 GFLOP/s
+  threads  gpu_shared_r4  N=2^20 threads=32   logB=11 sharedThreads=512     0.2167 ms   483.9 GFLOP/s
+  threads  gpu_shared_r4  N=2^20 threads=64   logB=11 sharedThreads=512     0.2148 ms   488.1 GFLOP/s
+  threads  gpu_shared_r4  N=2^20 threads=128  logB=11 sharedThreads=512     0.2144 ms   489.0 GFLOP/s
+  threads  gpu_shared_r4  N=2^20 threads=256  logB=11 sharedThreads=512     0.2140 ms   490.0 GFLOP/s
+  threads  gpu_shared_r4  N=2^20 threads=512  logB=11 sharedThreads=512     0.2140 ms   490.0 GFLOP/s
+  threads  gpu_shared_r4  N=2^20 threads=1024 logB=11 sharedThreads=512     0.2144 ms   489.0 GFLOP/s
+  tile     gpu_shared     N=2^20 threads=256  logB=6  sharedThreads=32      0.3267 ms   321.0 GFLOP/s
+  tile     gpu_shared     N=2^20 threads=256  logB=7  sharedThreads=32      0.3162 ms   331.6 GFLOP/s
+  tile     gpu_shared     N=2^20 threads=256  logB=7  sharedThreads=64      0.3160 ms   331.8 GFLOP/s
+  tile     gpu_shared     N=2^20 threads=256  logB=8  sharedThreads=32      0.3097 ms   338.6 GFLOP/s
+  tile     gpu_shared     N=2^20 threads=256  logB=8  sharedThreads=64      0.3092 ms   339.1 GFLOP/s
+  tile     gpu_shared     N=2^20 threads=256  logB=8  sharedThreads=128     0.3076 ms   340.9 GFLOP/s
+  tile     gpu_shared     N=2^20 threads=256  logB=9  sharedThreads=32      0.3197 ms   328.0 GFLOP/s
+  tile     gpu_shared     N=2^20 threads=256  logB=9  sharedThreads=64      0.3135 ms   334.4 GFLOP/s
+  tile     gpu_shared     N=2^20 threads=256  logB=9  sharedThreads=128     0.3006 ms   348.8 GFLOP/s
+  tile     gpu_shared     N=2^20 threads=256  logB=9  sharedThreads=256     0.2982 ms   351.6 GFLOP/s
+  tile     gpu_shared     N=2^20 threads=256  logB=10 sharedThreads=32      0.3367 ms   311.4 GFLOP/s
+  tile     gpu_shared     N=2^20 threads=256  logB=10 sharedThreads=64      0.3215 ms   326.1 GFLOP/s
+  tile     gpu_shared     N=2^20 threads=256  logB=10 sharedThreads=128     0.3084 ms   340.0 GFLOP/s
+  tile     gpu_shared     N=2^20 threads=256  logB=10 sharedThreads=256     0.2920 ms   359.0 GFLOP/s
+  tile     gpu_shared     N=2^20 threads=256  logB=10 sharedThreads=512     0.2937 ms   357.0 GFLOP/s
+  tile     gpu_shared     N=2^20 threads=256  logB=11 sharedThreads=32      0.4033 ms   260.0 GFLOP/s
+  tile     gpu_shared     N=2^20 threads=256  logB=11 sharedThreads=64      0.3336 ms   314.3 GFLOP/s
+  tile     gpu_shared     N=2^20 threads=256  logB=11 sharedThreads=128     0.3185 ms   329.3 GFLOP/s
+  tile     gpu_shared     N=2^20 threads=256  logB=11 sharedThreads=256     0.3070 ms   341.6 GFLOP/s
+  tile     gpu_shared     N=2^20 threads=256  logB=11 sharedThreads=512     0.2896 ms   362.1 GFLOP/s
+  tile     gpu_shared     N=2^20 threads=256  logB=11 sharedThreads=1024    0.2947 ms   355.8 GFLOP/s
+  tile     gpu_shared     N=2^20 threads=256  logB=12 sharedThreads=32      0.5939 ms   176.6 GFLOP/s
+  tile     gpu_shared     N=2^20 threads=256  logB=12 sharedThreads=64      0.4280 ms   245.0 GFLOP/s
+  tile     gpu_shared     N=2^20 threads=256  logB=12 sharedThreads=128     0.3674 ms   285.4 GFLOP/s
+  tile     gpu_shared     N=2^20 threads=256  logB=12 sharedThreads=256     0.2886 ms   363.4 GFLOP/s
+  tile     gpu_shared     N=2^20 threads=256  logB=12 sharedThreads=512     0.2845 ms   368.6 GFLOP/s
+  tile     gpu_shared     N=2^20 threads=256  logB=12 sharedThreads=1024    0.2808 ms   373.5 GFLOP/s
+  tile     gpu_shared_r4  N=2^20 threads=256  logB=6  sharedThreads=32      0.2097 ms   500.0 GFLOP/s
+  tile     gpu_shared_r4  N=2^20 threads=256  logB=7  sharedThreads=32      0.2128 ms   492.8 GFLOP/s
+  tile     gpu_shared_r4  N=2^20 threads=256  logB=7  sharedThreads=64      0.2122 ms   494.2 GFLOP/s
+  tile     gpu_shared_r4  N=2^20 threads=256  logB=8  sharedThreads=32      0.2066 ms   507.4 GFLOP/s
+  tile     gpu_shared_r4  N=2^20 threads=256  logB=8  sharedThreads=64      0.2058 ms   509.5 GFLOP/s
+  tile     gpu_shared_r4  N=2^20 threads=256  logB=8  sharedThreads=128     0.2040 ms   514.1 GFLOP/s
+  tile     gpu_shared_r4  N=2^20 threads=256  logB=9  sharedThreads=32      0.2300 ms   455.9 GFLOP/s
+  tile     gpu_shared_r4  N=2^20 threads=256  logB=9  sharedThreads=64      0.2247 ms   466.7 GFLOP/s
+  tile     gpu_shared_r4  N=2^20 threads=256  logB=9  sharedThreads=128     0.2109 ms   497.1 GFLOP/s
+  tile     gpu_shared_r4  N=2^20 threads=256  logB=9  sharedThreads=256     0.2077 ms   504.9 GFLOP/s
+  tile     gpu_shared_r4  N=2^20 threads=256  logB=10 sharedThreads=32      0.2484 ms   422.1 GFLOP/s
+  tile     gpu_shared_r4  N=2^20 threads=256  logB=10 sharedThreads=64      0.2322 ms   451.5 GFLOP/s
+  tile     gpu_shared_r4  N=2^20 threads=256  logB=10 sharedThreads=128     0.2187 ms   479.4 GFLOP/s
+  tile     gpu_shared_r4  N=2^20 threads=256  logB=10 sharedThreads=256     0.2025 ms   517.7 GFLOP/s
+  tile     gpu_shared_r4  N=2^20 threads=256  logB=10 sharedThreads=512     0.2042 ms   513.5 GFLOP/s
+  tile     gpu_shared_r4  N=2^20 threads=256  logB=11 sharedThreads=32      0.3283 ms   319.4 GFLOP/s
+  tile     gpu_shared_r4  N=2^20 threads=256  logB=11 sharedThreads=64      0.2593 ms   404.4 GFLOP/s
+  tile     gpu_shared_r4  N=2^20 threads=256  logB=11 sharedThreads=128     0.2443 ms   429.2 GFLOP/s
+  tile     gpu_shared_r4  N=2^20 threads=256  logB=11 sharedThreads=256     0.2322 ms   451.5 GFLOP/s
+  tile     gpu_shared_r4  N=2^20 threads=256  logB=11 sharedThreads=512     0.2142 ms   489.5 GFLOP/s
+  tile     gpu_shared_r4  N=2^20 threads=256  logB=11 sharedThreads=1024    0.2200 ms   476.7 GFLOP/s
+  tile     gpu_shared_r4  N=2^20 threads=256  logB=12 sharedThreads=32      0.5237 ms   200.2 GFLOP/s
+  tile     gpu_shared_r4  N=2^20 threads=256  logB=12 sharedThreads=64      0.3574 ms   293.4 GFLOP/s
+  tile     gpu_shared_r4  N=2^20 threads=256  logB=12 sharedThreads=128     0.2968 ms   353.3 GFLOP/s
+  tile     gpu_shared_r4  N=2^20 threads=256  logB=12 sharedThreads=256     0.2175 ms   482.1 GFLOP/s
+  tile     gpu_shared_r4  N=2^20 threads=256  logB=12 sharedThreads=512     0.2136 ms   490.9 GFLOP/s
+  tile     gpu_shared_r4  N=2^20 threads=256  logB=12 sharedThreads=1024    0.2103 ms   498.5 GFLOP/s
+== sweep N = 2^24 ==
+  threads  gpu_basic      N=2^24 threads=32   logB=11 sharedThreads=512    12.7767 ms   157.6 GFLOP/s
+  threads  gpu_basic      N=2^24 threads=64   logB=11 sharedThreads=512    12.4361 ms   161.9 GFLOP/s
+  threads  gpu_basic      N=2^24 threads=128  logB=11 sharedThreads=512    12.4522 ms   161.7 GFLOP/s
+  threads  gpu_basic      N=2^24 threads=256  logB=11 sharedThreads=512    12.4293 ms   162.0 GFLOP/s
+  threads  gpu_basic      N=2^24 threads=512  logB=11 sharedThreads=512    12.4334 ms   161.9 GFLOP/s
+  threads  gpu_basic      N=2^24 threads=1024 logB=11 sharedThreads=512    12.4320 ms   161.9 GFLOP/s
+  threads  gpu_twiddle    N=2^24 threads=32   logB=11 sharedThreads=512    15.6465 ms   128.7 GFLOP/s
+  threads  gpu_twiddle    N=2^24 threads=64   logB=11 sharedThreads=512    15.4540 ms   130.3 GFLOP/s
+  threads  gpu_twiddle    N=2^24 threads=128  logB=11 sharedThreads=512    15.4575 ms   130.2 GFLOP/s
+  threads  gpu_twiddle    N=2^24 threads=256  logB=11 sharedThreads=512    15.4733 ms   130.1 GFLOP/s
+  threads  gpu_twiddle    N=2^24 threads=512  logB=11 sharedThreads=512    15.4540 ms   130.3 GFLOP/s
+  threads  gpu_twiddle    N=2^24 threads=1024 logB=11 sharedThreads=512    15.4784 ms   130.1 GFLOP/s
+  threads  gpu_shared_r4  N=2^24 threads=32   logB=11 sharedThreads=512     6.3592 ms   316.6 GFLOP/s
+  threads  gpu_shared_r4  N=2^24 threads=64   logB=11 sharedThreads=512     6.3556 ms   316.8 GFLOP/s
+  threads  gpu_shared_r4  N=2^24 threads=128  logB=11 sharedThreads=512     6.3562 ms   316.7 GFLOP/s
+  threads  gpu_shared_r4  N=2^24 threads=256  logB=11 sharedThreads=512     6.3668 ms   316.2 GFLOP/s
+  threads  gpu_shared_r4  N=2^24 threads=512  logB=11 sharedThreads=512     6.3728 ms   315.9 GFLOP/s
+  threads  gpu_shared_r4  N=2^24 threads=1024 logB=11 sharedThreads=512     6.3891 ms   315.1 GFLOP/s
+  tile     gpu_shared     N=2^24 threads=256  logB=6  sharedThreads=32     11.3570 ms   177.3 GFLOP/s
+  tile     gpu_shared     N=2^24 threads=256  logB=7  sharedThreads=32     11.0397 ms   182.4 GFLOP/s
+  tile     gpu_shared     N=2^24 threads=256  logB=7  sharedThreads=64     11.0486 ms   182.2 GFLOP/s
+  tile     gpu_shared     N=2^24 threads=256  logB=8  sharedThreads=32     10.7274 ms   187.7 GFLOP/s
+  tile     gpu_shared     N=2^24 threads=256  logB=8  sharedThreads=64     10.7086 ms   188.0 GFLOP/s
+  tile     gpu_shared     N=2^24 threads=256  logB=8  sharedThreads=128    10.7166 ms   187.9 GFLOP/s
+  tile     gpu_shared     N=2^24 threads=256  logB=9  sharedThreads=32     10.7581 ms   187.1 GFLOP/s
+  tile     gpu_shared     N=2^24 threads=256  logB=9  sharedThreads=64     10.7409 ms   187.4 GFLOP/s
+  tile     gpu_shared     N=2^24 threads=256  logB=9  sharedThreads=128    10.4092 ms   193.4 GFLOP/s
+  tile     gpu_shared     N=2^24 threads=256  logB=9  sharedThreads=256    10.4212 ms   193.2 GFLOP/s
+  tile     gpu_shared     N=2^24 threads=256  logB=10 sharedThreads=32     10.7180 ms   187.8 GFLOP/s
+  tile     gpu_shared     N=2^24 threads=256  logB=10 sharedThreads=64     10.6537 ms   189.0 GFLOP/s
+  tile     gpu_shared     N=2^24 threads=256  logB=10 sharedThreads=128    10.6519 ms   189.0 GFLOP/s
+  tile     gpu_shared     N=2^24 threads=256  logB=10 sharedThreads=256    10.1159 ms   199.0 GFLOP/s
+  tile     gpu_shared     N=2^24 threads=256  logB=10 sharedThreads=512    10.1198 ms   198.9 GFLOP/s
+  tile     gpu_shared     N=2^24 threads=256  logB=11 sharedThreads=32     10.9648 ms   183.6 GFLOP/s
+  tile     gpu_shared     N=2^24 threads=256  logB=11 sharedThreads=64     10.5406 ms   191.0 GFLOP/s
+  tile     gpu_shared     N=2^24 threads=256  logB=11 sharedThreads=128    10.5286 ms   191.2 GFLOP/s
+  tile     gpu_shared     N=2^24 threads=256  logB=11 sharedThreads=256    10.4985 ms   191.8 GFLOP/s
+  tile     gpu_shared     N=2^24 threads=256  logB=11 sharedThreads=512     9.9019 ms   203.3 GFLOP/s
+  tile     gpu_shared     N=2^24 threads=256  logB=11 sharedThreads=1024   10.1192 ms   199.0 GFLOP/s
+  tile     gpu_shared     N=2^24 threads=256  logB=12 sharedThreads=32     12.0523 ms   167.0 GFLOP/s
+  tile     gpu_shared     N=2^24 threads=256  logB=12 sharedThreads=64     10.7723 ms   186.9 GFLOP/s
+  tile     gpu_shared     N=2^24 threads=256  logB=12 sharedThreads=128     9.8742 ms   203.9 GFLOP/s
+  tile     gpu_shared     N=2^24 threads=256  logB=12 sharedThreads=256     9.7825 ms   205.8 GFLOP/s
+  tile     gpu_shared     N=2^24 threads=256  logB=12 sharedThreads=512     9.6885 ms   207.8 GFLOP/s
+  tile     gpu_shared     N=2^24 threads=256  logB=12 sharedThreads=1024    9.7657 ms   206.2 GFLOP/s
+  tile     gpu_shared_r4  N=2^24 threads=256  logB=6  sharedThreads=32      6.7246 ms   299.4 GFLOP/s
+  tile     gpu_shared_r4  N=2^24 threads=256  logB=7  sharedThreads=32      6.8588 ms   293.5 GFLOP/s
+  tile     gpu_shared_r4  N=2^24 threads=256  logB=7  sharedThreads=64      6.8678 ms   293.1 GFLOP/s
+  tile     gpu_shared_r4  N=2^24 threads=256  logB=8  sharedThreads=32      6.4162 ms   313.8 GFLOP/s
+  tile     gpu_shared_r4  N=2^24 threads=256  logB=8  sharedThreads=64      6.3961 ms   314.8 GFLOP/s
+  tile     gpu_shared_r4  N=2^24 threads=256  logB=8  sharedThreads=128     6.4047 ms   314.3 GFLOP/s
+  tile     gpu_shared_r4  N=2^24 threads=256  logB=9  sharedThreads=32      6.8999 ms   291.8 GFLOP/s
+  tile     gpu_shared_r4  N=2^24 threads=256  logB=9  sharedThreads=64      6.8848 ms   292.4 GFLOP/s
+  tile     gpu_shared_r4  N=2^24 threads=256  logB=9  sharedThreads=128     6.5538 ms   307.2 GFLOP/s
+  tile     gpu_shared_r4  N=2^24 threads=256  logB=9  sharedThreads=256     6.5649 ms   306.7 GFLOP/s
+  tile     gpu_shared_r4  N=2^24 threads=256  logB=10 sharedThreads=32      6.7248 ms   299.4 GFLOP/s
+  tile     gpu_shared_r4  N=2^24 threads=256  logB=10 sharedThreads=64      6.6648 ms   302.1 GFLOP/s
+  tile     gpu_shared_r4  N=2^24 threads=256  logB=10 sharedThreads=128     6.6630 ms   302.2 GFLOP/s
+  tile     gpu_shared_r4  N=2^24 threads=256  logB=10 sharedThreads=256     6.1297 ms   328.4 GFLOP/s
+  tile     gpu_shared_r4  N=2^24 threads=256  logB=10 sharedThreads=512     6.1336 ms   328.2 GFLOP/s
+  tile     gpu_shared_r4  N=2^24 threads=256  logB=11 sharedThreads=32      7.4287 ms   271.0 GFLOP/s
+  tile     gpu_shared_r4  N=2^24 threads=256  logB=11 sharedThreads=64      7.0111 ms   287.2 GFLOP/s
+  tile     gpu_shared_r4  N=2^24 threads=256  logB=11 sharedThreads=128     6.9927 ms   287.9 GFLOP/s
+  tile     gpu_shared_r4  N=2^24 threads=256  logB=11 sharedThreads=256     6.9638 ms   289.1 GFLOP/s
+  tile     gpu_shared_r4  N=2^24 threads=256  logB=11 sharedThreads=512     6.3666 ms   316.2 GFLOP/s
+  tile     gpu_shared_r4  N=2^24 threads=256  logB=11 sharedThreads=1024    6.5855 ms   305.7 GFLOP/s
+  tile     gpu_shared_r4  N=2^24 threads=256  logB=12 sharedThreads=32      8.3900 ms   240.0 GFLOP/s
+  tile     gpu_shared_r4  N=2^24 threads=256  logB=12 sharedThreads=64      7.1078 ms   283.2 GFLOP/s
+  tile     gpu_shared_r4  N=2^24 threads=256  logB=12 sharedThreads=128     6.2142 ms   324.0 GFLOP/s
+  tile     gpu_shared_r4  N=2^24 threads=256  logB=12 sharedThreads=256     6.1161 ms   329.2 GFLOP/s
+  tile     gpu_shared_r4  N=2^24 threads=256  logB=12 sharedThreads=512     6.0277 ms   334.0 GFLOP/s
+  tile     gpu_shared_r4  N=2^24 threads=256  logB=12 sharedThreads=1024    6.1049 ms   329.8 GFLOP/s
+wrote results/sweep.csv
+===== audio demo =====
+source: synthetic (chord + 3 kHz whistle + noise)
+samples: 176400  sr: 44100 Hz  duration: 4.00 s
+wrote results/audio/input.f32, input.wav, sr.txt
+# GPU: NVIDIA A30 | CC 8.0 | 56 SMs | 23.5 GB | peak BW 933 GB/s | runtime 11030 driver 12010
+samples=176400  sr=44100 Hz  duration=4.000 s  padded N=262144 (2^18)
+spectrum difference vs cuFFT (relative L2): 2.989e-07
+impl=gpu_shared_r4 filter=bandstop [2800, 3200] Hz
+H2D 0.290 ms | forward FFT 0.101 ms | filter 0.017 ms | inverse FFT 0.113 ms
+max |imag| after inverse = 7.95e-08 (should be ~1e-7)
+wrote results/audio/{spectrum_before,spectrum_after,output}.f32 and meta.txt
+GPU magnitude spectrum vs numpy.fft: relative L2 error = 1.127e-07
+wrote results/audio/output.wav
+wrote results/figs/audio_demo.png
+===== speech: Free Spoken Digit Dataset =====
+source: 10 files joined (data/speech/0_jackson_0.wav ...)
+samples: 52747  sr: 8000 Hz  duration: 6.59 s
+wrote results/speech/input.f32, input.wav, sr.txt
+# GPU: NVIDIA A30 | CC 8.0 | 56 SMs | 23.5 GB | peak BW 933 GB/s | runtime 11030 driver 12010
+samples=52747  sr=8000 Hz  duration=6.593 s  padded N=65536 (2^16)
+spectrum difference vs cuFFT (relative L2): 3.239e-07
+impl=gpu_shared_r4 filter=bandpass [300, 3400] Hz
+H2D 0.095 ms | forward FFT 0.043 ms | filter 0.014 ms | inverse FFT 0.051 ms
+max |imag| after inverse = 5.12e-08 (should be ~1e-7)
+wrote results/speech/{spectrum_before,spectrum_after,output}.f32 and meta.txt
+GPU magnitude spectrum vs numpy.fft: relative L2 error = 1.102e-07
+wrote results/speech/output.wav
+wrote results/figs/speech.png
+===== ECG: MIT-BIH record 100 =====
+source: data/ecg_100.wav
+samples: 650000  sr: 360 Hz  duration: 1805.56 s
+wrote results/ecg_baseline/input.f32, input.wav, sr.txt
+# GPU: NVIDIA A30 | CC 8.0 | 56 SMs | 23.5 GB | peak BW 933 GB/s | runtime 11030 driver 12010
+samples=650000  sr=360 Hz  duration=1805.556 s  padded N=1048576 (2^20)
+spectrum difference vs cuFFT (relative L2): 3.816e-07
+impl=gpu_shared_r4 filter=highpass [0, 0] Hz
+H2D 0.839 ms | forward FFT 0.322 ms | filter 0.028 ms | inverse FFT 0.345 ms
+max |imag| after inverse = 5.40e-08 (should be ~1e-7)
+wrote results/ecg_baseline/{spectrum_before,spectrum_after,output}.f32 and meta.txt
+GPU magnitude spectrum vs numpy.fft: relative L2 error = 1.024e-07
+wrote results/ecg_baseline/output.wav
+wrote results/figs/ecg_baseline.png
+source: data/ecg_100.wav
+samples: 650000  sr: 360 Hz  duration: 1805.56 s
+wrote results/ecg_powerline/input.f32, input.wav, sr.txt
+# GPU: NVIDIA A30 | CC 8.0 | 56 SMs | 23.5 GB | peak BW 933 GB/s | runtime 11030 driver 12010
+samples=650000  sr=360 Hz  duration=1805.556 s  padded N=1048576 (2^20)
+spectrum difference vs cuFFT (relative L2): 3.816e-07
+impl=gpu_shared_r4 filter=bandstop [59, 61] Hz
+H2D 0.845 ms | forward FFT 0.324 ms | filter 0.027 ms | inverse FFT 0.345 ms
+max |imag| after inverse = 5.62e-08 (should be ~1e-7)
+wrote results/ecg_powerline/{spectrum_before,spectrum_after,output}.f32 and meta.txt
+GPU magnitude spectrum vs numpy.fft: relative L2 error = 1.024e-07
+wrote results/ecg_powerline/output.wav
+wrote results/figs/ecg_powerline.png
+===== plots =====
+wrote results/figs/fig1_time_kernel.png
+wrote results/figs/fig2_time_e2e.png
+wrote results/figs/fig3_speedup.png
+wrote results/figs/fig4_gflops.png
+wrote results/figs/fig5_error.png
+wrote results/figs/fig6_transfer.png
+wrote results/figs/fig7_ablation.png
+wrote results/figs/fig8_threads.png
+wrote results/figs/fig9_tile.png
+wrote results/figs/summary.md
+finished: Fri Nov 27 02:30:34 IST 2026

@@ -1,0 +1,12 @@
+samples 650000
+sr 360
+n 1048576
+impl gpu_shared_r4
+filter bandstop
+f1 59
+f2 61
+h2d_ms 0.844864
+forward_ms 0.323584
+filter_ms 0.02672
+inverse_ms 0.345472
+max_imag_after_inverse 5.62272e-08

@@ -1,0 +1,12 @@
+samples 650000
+sr 360
+n 1048576
+impl gpu_shared_r4
+filter highpass
+f1 0.5
+f2 0
+h2d_ms 0.839424
+forward_ms 0.321536
+filter_ms 0.02816
+inverse_ms 0.345088
+max_imag_after_inverse 5.39513e-08

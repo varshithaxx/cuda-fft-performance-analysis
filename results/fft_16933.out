@@ -1,0 +1,236 @@
+node: node003   job: 16933   step: test   started: Fri Nov 27 02:27:49 IST 2026
+NVIDIA A30, 530.30.02, 24576 MiB
+NVIDIA A30, 530.30.02, 24576 MiB
+===== GPU correctness tests =====
+# GPU: NVIDIA A30 | CC 8.0 | 56 SMs | 23.5 GB | peak BW 933 GB/s | runtime 11030 driver 12010
+  [PASS] gpu_basic      N=2         impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=3.0e-06
+  [PASS] gpu_twiddle    N=2         impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=3.0e-06
+  [PASS] gpu_shared     N=2         impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=3.0e-06
+  [PASS] gpu_shared_r4  N=2         impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=3.0e-06
+  [PASS] cufft          N=2         impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=3.0e-06
+  [PASS] gpu_basic      N=2         sine       fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=3.0e-06
+  [PASS] gpu_twiddle    N=2         sine       fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=3.0e-06
+  [PASS] gpu_shared     N=2         sine       fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=3.0e-06
+  [PASS] gpu_shared_r4  N=2         sine       fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=3.0e-06
+  [PASS] cufft          N=2         sine       fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=3.0e-06
+  [PASS] gpu_basic      N=2         multisine  fwd_err=3.42e-08 roundtrip_err=3.42e-08 tol=3.0e-06
+  [PASS] gpu_twiddle    N=2         multisine  fwd_err=3.42e-08 roundtrip_err=3.42e-08 tol=3.0e-06
+  [PASS] gpu_shared     N=2         multisine  fwd_err=3.42e-08 roundtrip_err=3.42e-08 tol=3.0e-06
+  [PASS] gpu_shared_r4  N=2         multisine  fwd_err=3.42e-08 roundtrip_err=3.42e-08 tol=3.0e-06
+  [PASS] cufft          N=2         multisine  fwd_err=3.42e-08 roundtrip_err=3.42e-08 tol=3.0e-06
+  [PASS] gpu_basic      N=2         random     fwd_err=3.56e-08 roundtrip_err=3.56e-08 tol=3.0e-06
+  [PASS] gpu_twiddle    N=2         random     fwd_err=3.56e-08 roundtrip_err=3.56e-08 tol=3.0e-06
+  [PASS] gpu_shared     N=2         random     fwd_err=3.56e-08 roundtrip_err=3.56e-08 tol=3.0e-06
+  [PASS] gpu_shared_r4  N=2         random     fwd_err=3.56e-08 roundtrip_err=3.56e-08 tol=3.0e-06
+  [PASS] cufft          N=2         random     fwd_err=3.56e-08 roundtrip_err=3.56e-08 tol=3.0e-06
+  [PASS] gpu_basic      N=4         impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=4.0e-06
+  [PASS] gpu_twiddle    N=4         impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=4.0e-06
+  [PASS] gpu_shared     N=4         impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=4.0e-06
+  [PASS] gpu_shared_r4  N=4         impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=4.0e-06
+  [PASS] cufft          N=4         impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=4.0e-06
+  [PASS] gpu_basic      N=4         sine       fwd_err=6.64e-24 roundtrip_err=7.53e-24 tol=4.0e-06
+  [PASS] gpu_twiddle    N=4         sine       fwd_err=6.64e-24 roundtrip_err=7.53e-24 tol=4.0e-06
+  [PASS] gpu_shared     N=4         sine       fwd_err=6.64e-24 roundtrip_err=7.53e-24 tol=4.0e-06
+  [PASS] gpu_shared_r4  N=4         sine       fwd_err=6.64e-24 roundtrip_err=7.53e-24 tol=4.0e-06
+  [PASS] cufft          N=4         sine       fwd_err=6.64e-24 roundtrip_err=7.53e-24 tol=4.0e-06
+  [PASS] gpu_basic      N=4         multisine  fwd_err=2.20e-08 roundtrip_err=2.20e-08 tol=4.0e-06
+  [PASS] gpu_twiddle    N=4         multisine  fwd_err=2.20e-08 roundtrip_err=2.20e-08 tol=4.0e-06
+  [PASS] gpu_shared     N=4         multisine  fwd_err=2.20e-08 roundtrip_err=2.20e-08 tol=4.0e-06
+  [PASS] gpu_shared_r4  N=4         multisine  fwd_err=2.20e-08 roundtrip_err=2.20e-08 tol=4.0e-06
+  [PASS] cufft          N=4         multisine  fwd_err=2.20e-08 roundtrip_err=2.20e-08 tol=4.0e-06
+  [PASS] gpu_basic      N=4         random     fwd_err=3.82e-08 roundtrip_err=5.00e-08 tol=4.0e-06
+  [PASS] gpu_twiddle    N=4         random     fwd_err=3.82e-08 roundtrip_err=5.00e-08 tol=4.0e-06
+  [PASS] gpu_shared     N=4         random     fwd_err=3.82e-08 roundtrip_err=5.00e-08 tol=4.0e-06
+  [PASS] gpu_shared_r4  N=4         random     fwd_err=3.82e-08 roundtrip_err=5.00e-08 tol=4.0e-06
+  [PASS] cufft          N=4         random     fwd_err=3.82e-08 roundtrip_err=5.00e-08 tol=4.0e-06
+  [PASS] gpu_basic      N=8         impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=5.0e-06
+  [PASS] gpu_twiddle    N=8         impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=5.0e-06
+  [PASS] gpu_shared     N=8         impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=5.0e-06
+  [PASS] gpu_shared_r4  N=8         impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=5.0e-06
+  [PASS] cufft          N=8         impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=5.0e-06
+  [PASS] gpu_basic      N=8         sine       fwd_err=1.62e-23 roundtrip_err=1.62e-23 tol=5.0e-06
+  [PASS] gpu_twiddle    N=8         sine       fwd_err=1.11e-23 roundtrip_err=1.41e-23 tol=5.0e-06
+  [PASS] gpu_shared     N=8         sine       fwd_err=1.11e-23 roundtrip_err=1.41e-23 tol=5.0e-06
+  [PASS] gpu_shared_r4  N=8         sine       fwd_err=1.11e-23 roundtrip_err=1.41e-23 tol=5.0e-06
+  [PASS] cufft          N=8         sine       fwd_err=1.72e-23 roundtrip_err=2.12e-23 tol=5.0e-06
+  [PASS] gpu_basic      N=8         multisine  fwd_err=3.22e-08 roundtrip_err=8.20e-08 tol=5.0e-06
+  [PASS] gpu_twiddle    N=8         multisine  fwd_err=3.22e-08 roundtrip_err=8.20e-08 tol=5.0e-06
+  [PASS] gpu_shared     N=8         multisine  fwd_err=3.22e-08 roundtrip_err=8.20e-08 tol=5.0e-06
+  [PASS] gpu_shared_r4  N=8         multisine  fwd_err=3.22e-08 roundtrip_err=8.20e-08 tol=5.0e-06
+  [PASS] cufft          N=8         multisine  fwd_err=2.99e-08 roundtrip_err=9.33e-08 tol=5.0e-06
+  [PASS] gpu_basic      N=8         random     fwd_err=8.27e-08 roundtrip_err=8.83e-08 tol=5.0e-06
+  [PASS] gpu_twiddle    N=8         random     fwd_err=6.94e-08 roundtrip_err=9.37e-08 tol=5.0e-06
+  [PASS] gpu_shared     N=8         random     fwd_err=6.94e-08 roundtrip_err=9.37e-08 tol=5.0e-06
+  [PASS] gpu_shared_r4  N=8         random     fwd_err=6.94e-08 roundtrip_err=9.37e-08 tol=5.0e-06
+  [PASS] cufft          N=8         random     fwd_err=6.42e-08 roundtrip_err=8.28e-08 tol=5.0e-06
+  [PASS] gpu_basic      N=65536     impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=1.8e-05
+  [PASS] gpu_twiddle    N=65536     impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=1.8e-05
+  [PASS] gpu_shared     N=65536     impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=1.8e-05
+  [PASS] gpu_shared_r4  N=65536     impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=1.8e-05
+  [PASS] cufft          N=65536     impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=1.8e-05
+  [PASS] gpu_basic      N=65536     sine       fwd_err=1.17e-07 roundtrip_err=1.88e-07 tol=1.8e-05
+  [PASS] gpu_twiddle    N=65536     sine       fwd_err=1.13e-07 roundtrip_err=1.47e-07 tol=1.8e-05
+  [PASS] gpu_shared     N=65536     sine       fwd_err=1.13e-07 roundtrip_err=1.47e-07 tol=1.8e-05
+  [PASS] gpu_shared_r4  N=65536     sine       fwd_err=1.13e-07 roundtrip_err=1.47e-07 tol=1.8e-05
+  [PASS] cufft          N=65536     sine       fwd_err=3.53e-07 roundtrip_err=4.03e-07 tol=1.8e-05
+  [PASS] gpu_basic      N=65536     multisine  fwd_err=1.58e-07 roundtrip_err=2.46e-07 tol=1.8e-05
+  [PASS] gpu_twiddle    N=65536     multisine  fwd_err=1.43e-07 roundtrip_err=2.06e-07 tol=1.8e-05
+  [PASS] gpu_shared     N=65536     multisine  fwd_err=1.43e-07 roundtrip_err=2.06e-07 tol=1.8e-05
+  [PASS] gpu_shared_r4  N=65536     multisine  fwd_err=1.43e-07 roundtrip_err=2.06e-07 tol=1.8e-05
+  [PASS] cufft          N=65536     multisine  fwd_err=2.95e-07 roundtrip_err=4.74e-07 tol=1.8e-05
+  [PASS] gpu_basic      N=65536     random     fwd_err=1.77e-07 roundtrip_err=2.71e-07 tol=1.8e-05
+  [PASS] gpu_twiddle    N=65536     random     fwd_err=1.50e-07 roundtrip_err=2.15e-07 tol=1.8e-05
+  [PASS] gpu_shared     N=65536     random     fwd_err=1.50e-07 roundtrip_err=2.15e-07 tol=1.8e-05
+  [PASS] gpu_shared_r4  N=65536     random     fwd_err=1.50e-07 roundtrip_err=2.15e-07 tol=1.8e-05
+  [PASS] cufft          N=65536     random     fwd_err=3.16e-07 roundtrip_err=4.48e-07 tol=1.8e-05
+  [PASS] gpu_basic      N=131072    impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=1.9e-05
+  [PASS] gpu_twiddle    N=131072    impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=1.9e-05
+  [PASS] gpu_shared     N=131072    impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=1.9e-05
+  [PASS] gpu_shared_r4  N=131072    impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=1.9e-05
+  [PASS] cufft          N=131072    impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=1.9e-05
+  [PASS] gpu_basic      N=131072    sine       fwd_err=1.62e-07 roundtrip_err=2.11e-07 tol=1.9e-05
+  [PASS] gpu_twiddle    N=131072    sine       fwd_err=1.15e-07 roundtrip_err=1.66e-07 tol=1.9e-05
+  [PASS] gpu_shared     N=131072    sine       fwd_err=1.15e-07 roundtrip_err=1.66e-07 tol=1.9e-05
+  [PASS] gpu_shared_r4  N=131072    sine       fwd_err=1.15e-07 roundtrip_err=1.66e-07 tol=1.9e-05
+  [PASS] cufft          N=131072    sine       fwd_err=3.37e-07 roundtrip_err=3.58e-07 tol=1.9e-05
+  [PASS] gpu_basic      N=131072    multisine  fwd_err=1.73e-07 roundtrip_err=2.73e-07 tol=1.9e-05
+  [PASS] gpu_twiddle    N=131072    multisine  fwd_err=1.47e-07 roundtrip_err=2.03e-07 tol=1.9e-05
+  [PASS] gpu_shared     N=131072    multisine  fwd_err=1.47e-07 roundtrip_err=2.03e-07 tol=1.9e-05
+  [PASS] gpu_shared_r4  N=131072    multisine  fwd_err=1.47e-07 roundtrip_err=2.03e-07 tol=1.9e-05
+  [PASS] cufft          N=131072    multisine  fwd_err=3.17e-07 roundtrip_err=4.50e-07 tol=1.9e-05
+  [PASS] gpu_basic      N=131072    random     fwd_err=1.83e-07 roundtrip_err=2.81e-07 tol=1.9e-05
+  [PASS] gpu_twiddle    N=131072    random     fwd_err=1.55e-07 roundtrip_err=2.21e-07 tol=1.9e-05
+  [PASS] gpu_shared     N=131072    random     fwd_err=1.55e-07 roundtrip_err=2.21e-07 tol=1.9e-05
+  [PASS] gpu_shared_r4  N=131072    random     fwd_err=1.55e-07 roundtrip_err=2.21e-07 tol=1.9e-05
+  [PASS] cufft          N=131072    random     fwd_err=3.04e-07 roundtrip_err=4.26e-07 tol=1.9e-05
+  [PASS] gpu_basic      N=262144    impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.0e-05
+  [PASS] gpu_twiddle    N=262144    impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.0e-05
+  [PASS] gpu_shared     N=262144    impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.0e-05
+  [PASS] gpu_shared_r4  N=262144    impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.0e-05
+  [PASS] cufft          N=262144    impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.0e-05
+  [PASS] gpu_basic      N=262144    sine       fwd_err=1.44e-07 roundtrip_err=1.97e-07 tol=2.0e-05
+  [PASS] gpu_twiddle    N=262144    sine       fwd_err=1.20e-07 roundtrip_err=1.56e-07 tol=2.0e-05
+  [PASS] gpu_shared     N=262144    sine       fwd_err=1.20e-07 roundtrip_err=1.56e-07 tol=2.0e-05
+  [PASS] gpu_shared_r4  N=262144    sine       fwd_err=1.20e-07 roundtrip_err=1.56e-07 tol=2.0e-05
+  [PASS] cufft          N=262144    sine       fwd_err=3.08e-07 roundtrip_err=4.45e-07 tol=2.0e-05
+  [PASS] gpu_basic      N=262144    multisine  fwd_err=1.86e-07 roundtrip_err=2.95e-07 tol=2.0e-05
+  [PASS] gpu_twiddle    N=262144    multisine  fwd_err=1.69e-07 roundtrip_err=2.41e-07 tol=2.0e-05
+  [PASS] gpu_shared     N=262144    multisine  fwd_err=1.69e-07 roundtrip_err=2.41e-07 tol=2.0e-05
+  [PASS] gpu_shared_r4  N=262144    multisine  fwd_err=1.69e-07 roundtrip_err=2.41e-07 tol=2.0e-05
+  [PASS] cufft          N=262144    multisine  fwd_err=2.96e-07 roundtrip_err=4.04e-07 tol=2.0e-05
+  [PASS] gpu_basic      N=262144    random     fwd_err=1.90e-07 roundtrip_err=2.93e-07 tol=2.0e-05
+  [PASS] gpu_twiddle    N=262144    random     fwd_err=1.60e-07 roundtrip_err=2.27e-07 tol=2.0e-05
+  [PASS] gpu_shared     N=262144    random     fwd_err=1.60e-07 roundtrip_err=2.27e-07 tol=2.0e-05
+  [PASS] gpu_shared_r4  N=262144    random     fwd_err=1.60e-07 roundtrip_err=2.27e-07 tol=2.0e-05
+  [PASS] cufft          N=262144    random     fwd_err=2.86e-07 roundtrip_err=4.00e-07 tol=2.0e-05
+  [PASS] gpu_basic      N=524288    impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.1e-05
+  [PASS] gpu_twiddle    N=524288    impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.1e-05
+  [PASS] gpu_shared     N=524288    impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.1e-05
+  [PASS] gpu_shared_r4  N=524288    impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.1e-05
+  [PASS] cufft          N=524288    impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.1e-05
+  [PASS] gpu_basic      N=524288    sine       fwd_err=1.40e-07 roundtrip_err=2.08e-07 tol=2.1e-05
+  [PASS] gpu_twiddle    N=524288    sine       fwd_err=1.31e-07 roundtrip_err=1.65e-07 tol=2.1e-05
+  [PASS] gpu_shared     N=524288    sine       fwd_err=1.31e-07 roundtrip_err=1.65e-07 tol=2.1e-05
+  [PASS] gpu_shared_r4  N=524288    sine       fwd_err=1.31e-07 roundtrip_err=1.65e-07 tol=2.1e-05
+  [PASS] cufft          N=524288    sine       fwd_err=3.91e-07 roundtrip_err=4.98e-07 tol=2.1e-05
+  [PASS] gpu_basic      N=524288    multisine  fwd_err=2.16e-07 roundtrip_err=3.28e-07 tol=2.1e-05
+  [PASS] gpu_twiddle    N=524288    multisine  fwd_err=1.46e-07 roundtrip_err=2.14e-07 tol=2.1e-05
+  [PASS] gpu_shared     N=524288    multisine  fwd_err=1.46e-07 roundtrip_err=2.14e-07 tol=2.1e-05
+  [PASS] gpu_shared_r4  N=524288    multisine  fwd_err=1.46e-07 roundtrip_err=2.14e-07 tol=2.1e-05
+  [PASS] cufft          N=524288    multisine  fwd_err=3.81e-07 roundtrip_err=6.15e-07 tol=2.1e-05
+  [PASS] gpu_basic      N=524288    random     fwd_err=1.96e-07 roundtrip_err=3.03e-07 tol=2.1e-05
+  [PASS] gpu_twiddle    N=524288    random     fwd_err=1.64e-07 roundtrip_err=2.34e-07 tol=2.1e-05
+  [PASS] gpu_shared     N=524288    random     fwd_err=1.64e-07 roundtrip_err=2.34e-07 tol=2.1e-05
+  [PASS] gpu_shared_r4  N=524288    random     fwd_err=1.64e-07 roundtrip_err=2.34e-07 tol=2.1e-05
+  [PASS] cufft          N=524288    random     fwd_err=3.75e-07 roundtrip_err=5.63e-07 tol=2.1e-05
+  [PASS] gpu_basic      N=1048576   impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.2e-05
+  [PASS] gpu_twiddle    N=1048576   impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.2e-05
+  [PASS] gpu_shared     N=1048576   impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.2e-05
+  [PASS] gpu_shared_r4  N=1048576   impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.2e-05
+  [PASS] cufft          N=1048576   impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.2e-05
+  [PASS] gpu_basic      N=1048576   sine       fwd_err=1.26e-07 roundtrip_err=2.25e-07 tol=2.2e-05
+  [PASS] gpu_twiddle    N=1048576   sine       fwd_err=1.23e-07 roundtrip_err=1.67e-07 tol=2.2e-05
+  [PASS] gpu_shared     N=1048576   sine       fwd_err=1.23e-07 roundtrip_err=1.67e-07 tol=2.2e-05
+  [PASS] gpu_shared_r4  N=1048576   sine       fwd_err=1.23e-07 roundtrip_err=1.67e-07 tol=2.2e-05
+  [PASS] cufft          N=1048576   sine       fwd_err=4.89e-07 roundtrip_err=5.80e-07 tol=2.2e-05
+  [PASS] gpu_basic      N=1048576   multisine  fwd_err=1.96e-07 roundtrip_err=3.03e-07 tol=2.2e-05
+  [PASS] gpu_twiddle    N=1048576   multisine  fwd_err=1.60e-07 roundtrip_err=2.13e-07 tol=2.2e-05
+  [PASS] gpu_shared     N=1048576   multisine  fwd_err=1.60e-07 roundtrip_err=2.13e-07 tol=2.2e-05
+  [PASS] gpu_shared_r4  N=1048576   multisine  fwd_err=1.60e-07 roundtrip_err=2.13e-07 tol=2.2e-05
+  [PASS] cufft          N=1048576   multisine  fwd_err=4.70e-07 roundtrip_err=8.68e-07 tol=2.2e-05
+  [PASS] gpu_basic      N=1048576   random     fwd_err=2.02e-07 roundtrip_err=3.14e-07 tol=2.2e-05
+  [PASS] gpu_twiddle    N=1048576   random     fwd_err=1.69e-07 roundtrip_err=2.40e-07 tol=2.2e-05
+  [PASS] gpu_shared     N=1048576   random     fwd_err=1.69e-07 roundtrip_err=2.40e-07 tol=2.2e-05
+  [PASS] gpu_shared_r4  N=1048576   random     fwd_err=1.69e-07 roundtrip_err=2.40e-07 tol=2.2e-05
+  [PASS] cufft          N=1048576   random     fwd_err=4.60e-07 roundtrip_err=7.11e-07 tol=2.2e-05
+  [PASS] gpu_basic      N=2097152   impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.3e-05
+  [PASS] gpu_twiddle    N=2097152   impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.3e-05
+  [PASS] gpu_shared     N=2097152   impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.3e-05
+  [PASS] gpu_shared_r4  N=2097152   impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.3e-05
+  [PASS] cufft          N=2097152   impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.3e-05
+  [PASS] gpu_basic      N=2097152   sine       fwd_err=1.30e-07 roundtrip_err=2.31e-07 tol=2.3e-05
+  [PASS] gpu_twiddle    N=2097152   sine       fwd_err=1.29e-07 roundtrip_err=1.71e-07 tol=2.3e-05
+  [PASS] gpu_shared     N=2097152   sine       fwd_err=1.29e-07 roundtrip_err=1.71e-07 tol=2.3e-05
+  [PASS] gpu_shared_r4  N=2097152   sine       fwd_err=1.29e-07 roundtrip_err=1.71e-07 tol=2.3e-05
+  [PASS] cufft          N=2097152   sine       fwd_err=5.01e-07 roundtrip_err=5.97e-07 tol=2.3e-05
+  [PASS] gpu_basic      N=2097152   multisine  fwd_err=2.00e-07 roundtrip_err=3.14e-07 tol=2.3e-05
+  [PASS] gpu_twiddle    N=2097152   multisine  fwd_err=1.73e-07 roundtrip_err=2.33e-07 tol=2.3e-05
+  [PASS] gpu_shared     N=2097152   multisine  fwd_err=1.73e-07 roundtrip_err=2.33e-07 tol=2.3e-05
+  [PASS] gpu_shared_r4  N=2097152   multisine  fwd_err=1.73e-07 roundtrip_err=2.33e-07 tol=2.3e-05
+  [PASS] cufft          N=2097152   multisine  fwd_err=4.38e-07 roundtrip_err=7.71e-07 tol=2.3e-05
+  [PASS] gpu_basic      N=2097152   random     fwd_err=2.08e-07 roundtrip_err=3.25e-07 tol=2.3e-05
+  [PASS] gpu_twiddle    N=2097152   random     fwd_err=1.73e-07 roundtrip_err=2.46e-07 tol=2.3e-05
+  [PASS] gpu_shared     N=2097152   random     fwd_err=1.73e-07 roundtrip_err=2.46e-07 tol=2.3e-05
+  [PASS] gpu_shared_r4  N=2097152   random     fwd_err=1.73e-07 roundtrip_err=2.46e-07 tol=2.3e-05
+  [PASS] cufft          N=2097152   random     fwd_err=4.36e-07 roundtrip_err=6.66e-07 tol=2.3e-05
+  [PASS] gpu_basic      N=4194304   impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.4e-05
+  [PASS] gpu_twiddle    N=4194304   impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.4e-05
+  [PASS] gpu_shared     N=4194304   impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.4e-05
+  [PASS] gpu_shared_r4  N=4194304   impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.4e-05
+  [PASS] cufft          N=4194304   impulse    fwd_err=0.00e+00 roundtrip_err=0.00e+00 tol=2.4e-05
+  [PASS] gpu_basic      N=4194304   sine       fwd_err=1.34e-07 roundtrip_err=2.30e-07 tol=2.4e-05
+  [PASS] gpu_twiddle    N=4194304   sine       fwd_err=1.51e-07 roundtrip_err=1.98e-07 tol=2.4e-05
+  [PASS] gpu_shared     N=4194304   sine       fwd_err=1.51e-07 roundtrip_err=1.98e-07 tol=2.4e-05
+  [PASS] gpu_shared_r4  N=4194304   sine       fwd_err=1.51e-07 roundtrip_err=1.98e-07 tol=2.4e-05
+  [PASS] cufft          N=4194304   sine       fwd_err=4.82e-07 roundtrip_err=5.79e-07 tol=2.4e-05
+  [PASS] gpu_basic      N=4194304   multisine  fwd_err=2.10e-07 roundtrip_err=3.22e-07 tol=2.4e-05
+  [PASS] gpu_twiddle    N=4194304   multisine  fwd_err=1.70e-07 roundtrip_err=2.48e-07 tol=2.4e-05
+  [PASS] gpu_shared     N=4194304   multisine  fwd_err=1.70e-07 roundtrip_err=2.48e-07 tol=2.4e-05
+  [PASS] gpu_shared_r4  N=4194304   multisine  fwd_err=1.70e-07 roundtrip_err=2.48e-07 tol=2.4e-05
+  [PASS] cufft          N=4194304   multisine  fwd_err=4.24e-07 roundtrip_err=6.46e-07 tol=2.4e-05
+  [PASS] gpu_basic      N=4194304   random     fwd_err=2.14e-07 roundtrip_err=3.35e-07 tol=2.4e-05
+  [PASS] gpu_twiddle    N=4194304   random     fwd_err=1.77e-07 roundtrip_err=2.52e-07 tol=2.4e-05
+  [PASS] gpu_shared     N=4194304   random     fwd_err=1.77e-07 roundtrip_err=2.52e-07 tol=2.4e-05
+  [PASS] gpu_shared_r4  N=4194304   random     fwd_err=1.77e-07 roundtrip_err=2.52e-07 tol=2.4e-05
+  [PASS] cufft          N=4194304   random     fwd_err=4.11e-07 roundtrip_err=6.14e-07 tol=2.4e-05
+== Configuration variants (N = 2^20, random signal) ==
+  [PASS] shared_r4 threads=32   logB=6  sharedThreads=64   err=1.69e-07
+  [PASS] shared_r4 threads=32   logB=6  sharedThreads=256  err=1.69e-07
+  [PASS] shared_r4 threads=32   logB=6  sharedThreads=1024 err=1.69e-07
+  [PASS] shared_r4 threads=32   logB=9  sharedThreads=64   err=1.69e-07
+  [PASS] shared_r4 threads=32   logB=9  sharedThreads=256  err=1.69e-07
+  [PASS] shared_r4 threads=32   logB=9  sharedThreads=1024 err=1.69e-07
+  [PASS] shared_r4 threads=32   logB=12 sharedThreads=64   err=1.69e-07
+  [PASS] shared_r4 threads=32   logB=12 sharedThreads=256  err=1.69e-07
+  [PASS] shared_r4 threads=32   logB=12 sharedThreads=1024 err=1.69e-07
+  [PASS] shared_r4 threads=128  logB=6  sharedThreads=64   err=1.69e-07
+  [PASS] shared_r4 threads=128  logB=6  sharedThreads=256  err=1.69e-07
+  [PASS] shared_r4 threads=128  logB=6  sharedThreads=1024 err=1.69e-07
+  [PASS] shared_r4 threads=128  logB=9  sharedThreads=64   err=1.69e-07
+  [PASS] shared_r4 threads=128  logB=9  sharedThreads=256  err=1.69e-07
+  [PASS] shared_r4 threads=128  logB=9  sharedThreads=1024 err=1.69e-07
+  [PASS] shared_r4 threads=128  logB=12 sharedThreads=64   err=1.69e-07
+  [PASS] shared_r4 threads=128  logB=12 sharedThreads=256  err=1.69e-07
+  [PASS] shared_r4 threads=128  logB=12 sharedThreads=1024 err=1.69e-07
+  [PASS] shared_r4 threads=1024 logB=6  sharedThreads=64   err=1.69e-07
+  [PASS] shared_r4 threads=1024 logB=6  sharedThreads=256  err=1.69e-07
+  [PASS] shared_r4 threads=1024 logB=6  sharedThreads=1024 err=1.69e-07
+  [PASS] shared_r4 threads=1024 logB=9  sharedThreads=64   err=1.69e-07
+  [PASS] shared_r4 threads=1024 logB=9  sharedThreads=256  err=1.69e-07
+  [PASS] shared_r4 threads=1024 logB=9  sharedThreads=1024 err=1.69e-07
+  [PASS] shared_r4 threads=1024 logB=12 sharedThreads=64   err=1.69e-07
+  [PASS] shared_r4 threads=1024 logB=12 sharedThreads=256  err=1.69e-07
+  [PASS] shared_r4 threads=1024 logB=12 sharedThreads=1024 err=1.69e-07
+
+467 checks, ALL GPU TESTS PASSED: 0 failure(s)
+finished: Fri Nov 27 02:28:09 IST 2026
