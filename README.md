@@ -59,10 +59,6 @@ tools.py           plotting, audio prep
 data/  results/    recordings, CSVs, figures
 ```
 
-## Data and licence
-
-FSDD (CC BY-SA 4.0); MIT-BIH Arrhythmia Database via PhysioNet (Moody & Mark, 2001; Goldberger et al., 2000).
-
 ## Group Members
 
 - Prasanna: CPU reference and verification
